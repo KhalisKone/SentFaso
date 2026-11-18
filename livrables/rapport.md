@@ -214,5 +214,6 @@ UXP (Cybernetica) est une infrastructure d'échange décentralisée entre organi
 | Rapport | ce document (`livrables/rapport.pdf`) |
 | Vidéo de démonstration « Testez vous-même » (2 min 16) | `livrables/video-demonstration.mp4` |
 | Guide de test | `livrables/guide-de-test.pdf` |
+| Matrice de contribution (membres, couches, briques réutilisées et licences) | `livrables/matrice-de-contribution.pdf` |
 | Bonus : guichet agent, résilience, assistant, applications | `espace-usager/` (guichet), section 2.3 (pannes), `assistant/` et section 2.5 ; `app/` (Android, Linux, Windows), page « Télécharger » du site |
 | Bien commun : licence libre, règles, guide de réutilisation | `LICENCE.md` et `LICENSE` (EUPL 1.2) ; `livrables/regles-du-socle.pdf` ; `livrables/guide-de-reutilisation.pdf` |

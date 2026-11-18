@@ -8,6 +8,7 @@
 | Vidéo de démonstration (≈ 3 min) : une démarche complète sans pièce, puis l'usager qui retrouve la consultation | `video-demonstration.mp4` (2 min 16, voix off : « Testez vous-même », 5 essais) | ✅ |
 | Bonus : guichet agent, résilience, assistant, applications | guichet dans `../espace-usager/` ; pannes : « indisponible », relance automatique ; assistant (mascotte, Claude Haiku) dans `../assistant/` ; applications Android, Linux, Windows dans `../app/` (bouton « ⬇ Télécharger l'application » sur chaque page) | ✅ |
 | Guide pour tester en ligne | `guide-de-test.pdf` (source : `guide-de-test.md`) | ✅ |
+| Matrice de contribution par membre et par couche, briques réutilisées et leur licence | `matrice-de-contribution.pdf` (source : `matrice-de-contribution.md`) | ✅ |
 
 ## Spécifications OpenAPI (`specifications-openapi/`)
 
@@ -34,7 +35,7 @@
 ```bash
 outils/tester.sh                              # tous les tests → recopier la sortie dans resultats-des-tests.txt
 .venv/bin/python outils/exporter_openapi.py   # spécifications
-python3 outils/md_vers_pdf.py livrables/rapport.md livrables/guide-de-test.md livrables/guide-de-reutilisation.md livrables/regles-du-socle.md
+python3 outils/md_vers_pdf.py livrables/rapport.md livrables/guide-de-test.md livrables/guide-de-reutilisation.md livrables/regles-du-socle.md livrables/matrice-de-contribution.md
 ```
 
 La vidéo et les PDF sont remis avec les livrables ; ils ne sont pas publiés dans le dépôt de code (les PDF se régénèrent à partir des fichiers `.md`).
