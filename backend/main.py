@@ -80,6 +80,11 @@ migrer_accords_existants()
 
 app.mount("/frontend", Application(directory=INTERFACE, html=True), name="frontend")
 
+# Applications à télécharger (Android, Linux, Windows) : déposées sur le serveur, hors du dépôt de code.
+TELECHARGEMENTS = RACINE / "telechargements"
+if TELECHARGEMENTS.is_dir():
+    app.mount("/telechargements", StaticFiles(directory=TELECHARGEMENTS), name="telechargements")
+
 
 @app.get("/")
 def accueil():

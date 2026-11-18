@@ -11,7 +11,12 @@ export function EnTete({ sousTitre, children }) {
             <em>Burkina Faso</em>Dites-le-nous une fois<small>{sousTitre}</small>
           </span>
         </Link>
-        {children ? <div className="outils">{children}</div> : null}
+        <div className="outils">
+          {children}
+          <Link className="btn-telecharger" to="/telecharger" title="Application Android, Linux et Windows">
+            ⬇ Télécharger l'application
+          </Link>
+        </div>
       </div>
     </header>
   );

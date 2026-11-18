@@ -1,0 +1,63 @@
+{
+  "name": "dites-le-nous-une-fois-pc",
+  "productName": "Dites-le-nous une fois",
+  "version": "1.0.0",
+  "description": "Application de bureau du socle « Dites-le-nous une fois » : elle ouvre le site en ligne, donc toute mise à jour du site arrive dans l'application sans réinstallation.",
+  "author": "Équipe « Dites-le-nous une fois »",
+  "license": "EUPL-1.2",
+  "main": "main.js",
+  "scripts": {
+    "linux": "electron-builder --linux --publish never",
+    "windows": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "33.4.11",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "bf.dlnuf.socle",
+    "productName": "Dites-le-nous une fois",
+    "files": [
+      "main.js",
+      "erreur.html",
+      "icone.png"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "icone.png",
+      "category": "Office",
+      "maintainer": "Équipe Dites-le-nous une fois",
+      "synopsis": "Socle d'interopérabilité « Dites-le-nous une fois »"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icone.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false,
+      "include": "installer.nsh",
+      "installerIcon": "icone.ico",
+      "uninstallerIcon": "icone.ico",
+      "shortcutName": "Dites-le-nous une fois"
+    },
+    "extraResources": [
+      {
+        "from": "icone.ico",
+        "to": "icone.ico"
+      }
+    ]
+  },
+  "homepage": "https://github.com/KhalisKone/SentFaso"
+}

@@ -1,0 +1,14 @@
+{
+  "appId": "bf.dlnuf.socle",
+  "appName": "Dites-le-nous une fois",
+  "webDir": "www",
+  "server": {
+    "url": "https://hack226.185-193-66-4.sslip.io/frontend/",
+    "errorPath": "erreur.html",
+    "allowNavigation": ["hack226.185-193-66-4.sslip.io"]
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#ffffff"
+  }
+}

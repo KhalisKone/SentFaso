@@ -26,3 +26,16 @@ livrables/*.pdf
 outils/video/
 outils/video_demo.py
 outils/script-video.md
+# Application mobile : fichiers construits ou propres au poste
+*.apk
+app/mobile/apk/android/app/build/
+app/mobile/apk/android/build/
+app/mobile/apk/android/.gradle/
+app/mobile/apk/android/local.properties
+# Applications de bureau : fichiers construits (remis à part, pas dans le dépôt)
+app/pc/source/dist/
+app/pc/linux/*.AppImage
+app/pc/linux/*.deb
+app/pc/windons/*.exe
+# Applications à télécharger, servies par le serveur (/telechargements), hors du dépôt
+telechargements/

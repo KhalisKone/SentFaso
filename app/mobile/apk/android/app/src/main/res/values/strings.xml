@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Dites-le-nous une fois</string>
+    <string name="title_activity_main">Dites-le-nous une fois</string>
+    <string name="package_name">bf.dlnuf.socle</string>
+    <string name="custom_url_scheme">bf.dlnuf.socle</string>
+</resources>

@@ -205,6 +205,10 @@ main>*{min-width:0}
 .code-branchement dt{font-weight:600}
 .code-branchement dd{margin:0;word-break:break-all}
 .code-unique{margin:0 0 10px;padding:8px 12px;border-radius:10px;background:rgba(252,209,22,.22);border-left:4px solid var(--faso-rouge,#ef2b2d)}
+.btn-telecharger{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;color:#fff;background:var(--degrade);text-decoration:none;white-space:nowrap}
+.page-telecharger .versions{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
+.page-telecharger .version{text-align:center}.page-telecharger .version .btn{display:inline-block;margin:10px 0;text-decoration:none}
+.version-icone{font-size:44px;line-height:1}
 .donnees-test{position:relative;margin:2px 0 8px}
 .donnees-test-liste{position:absolute;z-index:40;top:100%;left:0;min-width:320px;max-width:min(92vw,480px);background:#fff;border:1px solid var(--verre-bord);border-radius:12px;box-shadow:var(--ombre);padding:6px;display:flex;flex-direction:column;gap:2px;max-height:min(60vh,420px);overflow-y:auto}
 .donnees-test-liste button{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;border:none;background:none;padding:8px 10px;border-radius:8px;cursor:pointer;font:inherit;color:inherit}

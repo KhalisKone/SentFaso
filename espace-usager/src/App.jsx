@@ -5,6 +5,7 @@ import { Accueil } from "./pages/Accueil.jsx";
 import { Connect } from "./pages/Connect.jsx";
 import { Espace } from "./pages/Espace.jsx";
 import { Toasts } from "./ui/Toasts.jsx";
+import { Telecharger } from "./pages/Telecharger.jsx";
 
 /**
  * Routes (sous /frontend) :
@@ -19,6 +20,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<AvecSocle><Accueil /></AvecSocle>} />
         <Route path="/connect" element={<Connect />} />
+        <Route path="/telecharger" element={<Telecharger />} />
         <Route path="/:slug/:module?/:id?" element={<AvecSocle><Espace /></AvecSocle>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
