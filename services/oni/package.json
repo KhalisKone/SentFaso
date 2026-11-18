@@ -1,0 +1,15 @@
+{
+  "name": "dlnuf-service-oni",
+  "version": "1.0.0",
+  "description": "ONI — service branché sur la plateforme « Dites-le-nous une fois ». Données fictives.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node serveur.js",
+    "test": "node --test"
+  }
+}

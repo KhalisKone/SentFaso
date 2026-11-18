@@ -1,0 +1,9 @@
+# Les PDF spécimens sont binaires : aucune conversion de fin de ligne (empreintes SHA-256 conservées).
+*.pdf binary
+# Code et données en LF dans le dépôt.
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf

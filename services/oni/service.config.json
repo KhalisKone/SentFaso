@@ -1,0 +1,20 @@
+{
+  "id": "oni",
+  "predicats": [
+    "majeur"
+  ],
+  "nom": "ONI",
+  "emetteur": "Office national d'identification",
+  "registre": "oni",
+  "schema": "registre_oni",
+  "specialite": [
+    "fiche_identite"
+  ],
+  "verification": true,
+  "exemple": {
+    "nin": "99000000000000001",
+    "types": [],
+    "pieces": 132
+  },
+  "description": "Service ONI (déjà branché ; double API)."
+}

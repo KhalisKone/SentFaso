@@ -1,0 +1,21 @@
+{
+  "id": "direction-passeports",
+  "predicats": [],
+  "nom": "Direction des passeports",
+  "emetteur": "Direction des passeports",
+  "registre": "direction-passeports",
+  "schema": "registre_direction_passeports",
+  "specialite": [
+    "passeport",
+    "photo_identite"
+  ],
+  "verification": false,
+  "exemple": {
+    "nin": "99000000000000001",
+    "types": [
+      "photo_identite"
+    ],
+    "pieces": 37
+  },
+  "description": "Passeports et photos d'identité (silhouettes fictives). Le type « passeport » n'est transmis que si la plateforme l'accepte (PLATEFORME_TYPES)."
+}

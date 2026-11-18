@@ -1,0 +1,19 @@
+{
+  "id": "ministere-transition-digitale",
+  "predicats": [
+    "majeur"
+  ],
+  "nom": "Ministère de la Transition digitale",
+  "emetteur": "Ministère de la Transition digitale",
+  "base": "personnes",
+  "fichier": "vouchers.csv",
+  "table": "vouchers",
+  "specialite": [],
+  "verification": true,
+  "exemple": {
+    "nin": "99000000000000001",
+    "types": [],
+    "pieces": 150
+  },
+  "description": "Base nationale des personnes (identifiants uniques, format vouchers) : confirme un identifiant pour connecter le citoyen."
+}

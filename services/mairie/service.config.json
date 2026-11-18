@@ -1,0 +1,26 @@
+{
+  "id": "mairie-ouagadougou",
+  "predicats": [
+    "majeur"
+  ],
+  "nom": "Mairie de Ouagadougou",
+  "emetteur": "Mairie de Ouagadougou",
+  "registre": "mairie-ouagadougou",
+  "schema": "registre_mairie_ouagadougou",
+  "specialite": [
+    "acte_naissance",
+    "acte_mariage",
+    "acte_deces",
+    "certificat_residence"
+  ],
+  "verification": false,
+  "exemple": {
+    "nin": "99000000000000001",
+    "types": [
+      "acte_naissance",
+      "certificat_residence"
+    ],
+    "pieces": 36
+  },
+  "description": "État civil : actes de naissance, de mariage, certificats de résidence."
+}

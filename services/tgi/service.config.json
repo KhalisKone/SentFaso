@@ -1,0 +1,36 @@
+{
+  "id": "tgi-ouagadougou",
+  "predicats": [
+    "casier_vierge"
+  ],
+  "autorisations": {
+    "casier_judiciaire": [
+      "direction-des-passeports",
+      "ministere-de-la-fonction-publique"
+    ],
+    "casier_vierge": [
+      "*"
+    ],
+    "certificat_nationalite": [
+      "*"
+    ]
+  },
+  "nom": "Tribunal de grande instance de Ouagadougou",
+  "emetteur": "Tribunal de grande instance de Ouagadougou",
+  "registre": "tgi-ouagadougou",
+  "schema": "registre_tgi_ouagadougou",
+  "specialite": [
+    "certificat_nationalite",
+    "casier_judiciaire"
+  ],
+  "verification": false,
+  "exemple": {
+    "nin": "99000000000000001",
+    "types": [
+      "certificat_nationalite",
+      "casier_judiciaire"
+    ],
+    "pieces": 35
+  },
+  "description": "Justice : certificats de nationalité, bulletins n° 3 du casier judiciaire."
+}
