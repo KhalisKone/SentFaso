@@ -77,3 +77,10 @@ def test_il_reste_toujours_un_super_admin(socle):
     sa = connecter(socle, SUPER_ADMIN)
     rep = socle.put("/etat", headers=sa, json={"roles": [{"id": "R1", "iu": SUPER_ADMIN, "role": "super_admin", "statut": "revoque"}]}).json()
     assert "dernier super admin" in rep["refus"]
+
+
+def test_le_mode_demonstration_est_annonce(socle, monkeypatch):
+    """Les « données de test » de l'interface ne s'affichent qu'en démonstration."""
+    assert socle.get("/session/mode").json() == {"demonstration": True}
+    monkeypatch.setenv("SOCLE_DEMO", "0")
+    assert socle.get("/session/mode").json() == {"demonstration": False}

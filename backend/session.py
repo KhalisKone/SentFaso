@@ -147,6 +147,11 @@ def ouvrir(o: Ouverture):
     return {"jeton": emettre_jeton(iu), "iu": iu, "expire_dans": DUREE_SESSION}
 
 
+@router.get("/mode", summary="Mode démonstration : code de connexion affiché, données de test proposées")
+def mode():
+    return {"demonstration": demo()}
+
+
 @router.get("", summary="Personne connectée et ses rôles")
 def moi(request: Request):
     p = personne(request)

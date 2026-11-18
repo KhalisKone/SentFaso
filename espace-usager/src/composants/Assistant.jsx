@@ -10,6 +10,7 @@ import {
 } from "../api/assistant.js";
 import mascotte from "../assets/mascotte-128.png";
 import mascotteGrande from "../assets/mascotte-320.png";
+import { contexteAssistant } from "../donnees/contexte-assistant.js";
 import { useSession } from "../donnees/hooks.js";
 import { cls } from "../ui/cls.js";
 import { BarreRecherche, useRecherche } from "../ui/Recherche.jsx";
@@ -60,6 +61,9 @@ function Texte({ texte }) {
 /** Suggestions selon la page et les compétences ouvertes à la personne. */
 function suggestions(page, competences) {
   const a = (nom) => competences.some((c) => c.nom === nom);
+  if (page.includes("/connect"))
+    return ["Mon test renvoie « 401 Unauthorized » : pourquoi ?", "Comment signer les réponses de mon registre ?",
+      "Mon API n'a pas ce format : comment régler l'adaptateur ?", "Que vérifie le banc de conformité ?"];
   if (!competences.length) return ["Comment fonctionne le socle ?", "Que dois-je donner au guichet ?", "Comment me connecter ?"];
   if (page.includes("/agent") && a("verifier_une_identite"))
     return ["Mes dossiers en attente de l'accord du citoyen", "D'où viennent les pièces de mes démarches ?", "Vérifie le NIN 99000000000000036"];
@@ -67,6 +71,12 @@ function suggestions(page, competences) {
   if (page.includes("/super-admin") && a("tester_les_registres")) return ["Les registres répondent-ils ?", "Le journal est-il intègre ?", "Quels services sont branchés ?"];
   return ["Où en sont mes demandes ?", "Qui a consulté mes données ?", "Quels papiers dois-je encore fournir ?"];
 }
+
+const ACCUEIL_CONNECT = {
+  role: "assistant",
+  texte: "Bonjour ! Je connais tout le branchement : contrat, signatures, adaptateur, banc de conformité. Collez-moi le message d'erreur exact (jamais votre code secret) : je vous guide jusqu'à la correction.",
+  competences: [],
+};
 
 const ACCUEIL = {
   role: "assistant",
@@ -132,11 +142,11 @@ export function Assistant() {
     setEnCours(true);
     try {
       if (connecte) {
-        const r = await envoyerMessage(message, conversation, page);
+        const r = await envoyerMessage(message, conversation, page, page.includes("/connect") ? contexteAssistant() : undefined);
         setConversation(r.conversation);
         setFil((f) => [...f, r.reponse]);
       } else {
-        const r = await envoyerMessagePublic(message, precedent.slice(-10), page);
+        const r = await envoyerMessagePublic(message, precedent.slice(-10), page, page.includes("/connect") ? contexteAssistant() : undefined);
         setFil((f) => [...f, r.reponse]);
       }
     } catch (e) {
@@ -146,6 +156,19 @@ export function Assistant() {
     }
     setEnCours(false);
   };
+
+  // Une autre page peut demander de l'aide (ex. bouton « Demander à l'assistant » à côté d'une erreur de branchement).
+  const envoyerRef = useRef(envoyer);
+  envoyerRef.current = envoyer;
+  useEffect(() => {
+    const demander = (e) => {
+      setOuvert(true);
+      setVue("discussion");
+      envoyerRef.current(e.detail);
+    };
+    window.addEventListener("assistant:demander", demander);
+    return () => window.removeEventListener("assistant:demander", demander);
+  }, []);
 
   const nouvelle = () => {
     setConversation(null);
@@ -178,7 +201,7 @@ export function Assistant() {
   };
 
   if (!actif) return null; // désactivé (ou pas encore connu) : pas de mascotte
-  const messages = [ACCUEIL, ...fil];
+  const messages = [page.includes("/connect") ? ACCUEIL_CONNECT : ACCUEIL, ...fil];
   return (
     <>
       <button type="button" className={cls("as-bouton", ouvert && "ouvert")} onClick={() => setOuvert(!ouvert)}
@@ -193,7 +216,7 @@ export function Assistant() {
             <img src={mascotteGrande} alt="Mascotte du socle : cheval blanc au foulard du Burkina Faso" />
             <div>
               <b>Votre assistant</b>
-              <small>{connecte ? `${competences.length} compétence(s) pour vous` : "Connectez-vous pour vos données"}</small>
+              <small>{page.includes("/connect") ? "Expert du branchement" : connecte ? `${competences.length} compétence(s) pour vous` : "Connectez-vous pour vos données"}</small>
             </div>
             <nav>
               {connecte ? (

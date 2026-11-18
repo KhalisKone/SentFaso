@@ -27,7 +27,7 @@ Ouvrir l'adresse affichée (http://127.0.0.1:8193/frontend/). La démonstration 
 casier judiciaire, nationalité, identité) peuplés de citoyens fictifs, les branche au socle, et crée les comptes ci-dessous.
 Rien n'est écrit sur le disque : chaque lancement repart des mêmes données.
 
-**Se connecter** : saisir un code unique, puis le code à 6 chiffres (en démonstration, il s'affiche à l'écran), puis choisir son espace.
+**Se connecter** : saisir un code unique — ou cliquer sur **« 🧪 Données de test »** sous le champ et choisir un profil — puis le code à 6 chiffres (en démonstration, il s'affiche à l'écran), puis choisir son espace.
 
 | Compte | Code unique |
 |---|---|

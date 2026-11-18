@@ -95,6 +95,30 @@
         ]
       }
     },
+    "/session/mode": {
+      "get": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Mode démonstration : code de connexion affiché, données de test proposées",
+        "operationId": "mode_session_mode_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
     "/session": {
       "get": {
         "tags": [

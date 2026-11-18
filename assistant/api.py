@@ -13,6 +13,7 @@ Le modèle se choisit dans backend/.env, sans toucher au code :
 """
 import asyncio
 import json
+import re
 import logging
 import os
 import secrets
@@ -25,7 +26,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from assistant import competences
-from assistant.consignes import CONSIGNES, contexte
+from assistant.consignes import CONNECT, CONSIGNES, contexte
 from session import Personne, lire_jeton, personne
 from stockage import ref
 
@@ -34,7 +35,7 @@ journal_technique = logging.getLogger("uvicorn.error")
 
 TOURS_MAX = 6                 # appels au modèle par message (compétences comprises)
 MESSAGES_PAR_CONVERSATION = 40
-QUOTA = {"connecte": (40, 3600), "anonyme": (12, 3600)}  # messages par fenêtre (secondes)
+QUOTA = {"connecte": (40, 3600), "anonyme": (30, 3600)}  # messages par fenêtre (secondes) ; 30 : dépannage d'un branchement
 _client: anthropic.AsyncAnthropic | None = None
 _usage: dict = defaultdict(deque)
 
@@ -91,11 +92,33 @@ def profil(p: Personne | None) -> dict | None:
     return {"nom": f"{x.get('prenoms', '')} {x.get('nom', '')}".strip() or "personne connectée", "roles": p.roles}
 
 
+CODE_SECRET = re.compile(r"sk_[A-Za-z0-9_\-]{8,}")
+
+
+def masquer(texte: str) -> str:
+    """Un code secret collé par erreur ne part jamais vers le modèle ni dans l'historique."""
+    return CODE_SECRET.sub("sk_*** (code secret masqué)", texte or "")
+
+
+def avec_contexte(message: str, contexte: str | None, page: str | None) -> str:
+    """Sur la page de branchement, la configuration saisie (fournie par l'interface, sans code secret) accompagne la question."""
+    if not (contexte and sur_connect(page)):
+        return masquer(message)
+    return (f"[Configuration actuelle de ma page de branchement — fournie automatiquement par l'interface, sans code secret]\n"
+            f"{masquer(contexte)}\n\n[Ma question]\n{masquer(message)}")
+
+
+def sur_connect(page: str | None) -> bool:
+    """Page de branchement : l'assistant y ajoute tout le savoir du branchement (contrat, signatures, erreurs, banc)."""
+    return "/connect" in (page or "")
+
+
 async def repondre(p: Personne | None, messages: list, page: str | None) -> tuple[str, list[str], list]:
     """Boucle d'outils : appelle le modèle, exécute les compétences demandées (en parallèle), recommence jusqu'à la réponse.
     Renvoie (texte final, compétences utilisées, nouveaux messages à ajouter à l'historique)."""
     outils = competences.definitions(p)
     systeme = [{"type": "text", "text": CONSIGNES, "cache_control": {"type": "ephemeral"}},
+               *([{"type": "text", "text": CONNECT, "cache_control": {"type": "ephemeral"}}] if sur_connect(page) else []),
                {"type": "text", "text": contexte(profil(p), page)}]
     ajoutes, utilisees = [], []
     for _ in range(TOURS_MAX):
@@ -140,7 +163,7 @@ async def repondre_compatible_openai(p: Personne | None, messages: list, page: s
     cle = os.environ.get("ASSISTANT_CLE")
     outils = [{"type": "function", "function": {"name": d["name"], "description": d["description"], "parameters": d["input_schema"]}}
               for d in competences.definitions(p)]
-    fil = [{"role": "system", "content": CONSIGNES + "\n\n" + contexte(profil(p), page)}, *messages]
+    fil = [{"role": "system", "content": CONSIGNES + ("\n\n" + CONNECT if sur_connect(page) else "") + "\n\n" + contexte(profil(p), page)}, *messages]
     utilisees = []
     async with client_http() as http:
         for _ in range(TOURS_MAX):
@@ -201,15 +224,17 @@ def lister(iu: str) -> list[dict]:
 
 # ── Routes ───────────────────────────────────────────────────────────────────
 class Message(BaseModel):
-    message: str = Field(min_length=1, max_length=2000)
+    message: str = Field(min_length=1, max_length=4000)
     conversation: str | None = Field(None, description="Identifiant d'une conversation existante (sinon : nouvelle).")
     page: str | None = Field(None, description="Page où se trouve la personne, pour adapter la réponse.")
+    contexte: str | None = Field(None, max_length=3000, description="Page de branchement : configuration saisie (sans code secret).")
 
 
 class MessagePublic(BaseModel):
-    message: str = Field(min_length=1, max_length=1000)
+    message: str = Field(min_length=1, max_length=4000, description="Question, ou message d'erreur collé (4000 caractères au plus).")
     historique: list[dict] = Field(default_factory=list, description="Derniers échanges [{role, texte}] (10 au plus).")
     page: str | None = None
+    contexte: str | None = Field(None, max_length=3000, description="Page de branchement : configuration saisie (sans code secret).")
 
 
 @router.get("/etat", summary="L'assistant est-il activé sur ce serveur ?")
@@ -252,7 +277,7 @@ async def message(m: Message, p: Personne = Depends(personne)):
     if len(c.get("fil", [])) >= MESSAGES_PAR_CONVERSATION * 2:
         raise HTTPException(409, "Cette conversation est longue : commencez-en une nouvelle.")
     verifier_configuration()
-    question = {"role": "user", "content": m.message}
+    question = {"role": "user", "content": avec_contexte(m.message, m.contexte, m.page)}
     if fournisseur() == "compatible-openai":  # historique repris en texte (le format détaillé est propre à chaque fournisseur)
         passe = [{"role": "user" if x["role"] == "user" else "assistant", "content": x["texte"]} for x in c.get("fil", [])[-20:]]
         texte, utilisees = await repondre_compatible_openai(p, [*passe, question], m.page)
@@ -262,7 +287,7 @@ async def message(m: Message, p: Personne = Depends(personne)):
     maintenant = time.strftime("%Y-%m-%dT%H:%M:%S")
     if ajoutes:  # détail propre à Claude (réflexion, appels d'outils), rejoué tel quel au tour suivant
         c["api"] = [*c.get("api", []), question, *ajoutes]
-    c["fil"] = [*c.get("fil", []), {"role": "user", "texte": m.message, "le": maintenant},
+    c["fil"] = [*c.get("fil", []), {"role": "user", "texte": masquer(m.message), "le": maintenant},
                 {"role": "assistant", "texte": texte, "le": maintenant, "competences": [competences.libelle(n) for n in dict.fromkeys(utilisees)]}]
     c["maj"] = maintenant
     ref(chemin(p.iu, cid)).set(c)
@@ -273,12 +298,12 @@ async def message(m: Message, p: Personne = Depends(personne)):
 @router.post("/public", summary="Question générale sans connexion (aucune compétence, rien n'est enregistré)")
 async def public(m: MessagePublic, request: Request):
     limiter(f"ip:{request.client.host if request.client else '?'}", "anonyme")
-    passe = [{"role": "user" if x.get("role") == "user" else "assistant", "content": str(x.get("texte", ""))[:2000]}
+    passe = [{"role": "user" if x.get("role") == "user" else "assistant", "content": masquer(str(x.get("texte", ""))[:4000])}
              for x in m.historique[-10:] if x.get("texte")]
     while passe and passe[0]["role"] != "user":
         passe.pop(0)
     verifier_configuration()
-    question = {"role": "user", "content": m.message}
+    question = {"role": "user", "content": avec_contexte(m.message, m.contexte, m.page)}
     if fournisseur() == "compatible-openai":
         texte, _ = await repondre_compatible_openai(None, [*passe, question], m.page)
     else:

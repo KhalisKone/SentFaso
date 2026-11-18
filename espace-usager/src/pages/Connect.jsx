@@ -2,15 +2,17 @@
  * Portail de branchement (/connect) : un registre vient avec l'identifiant et le code secret remis par le super admin,
  * lit le contrat d'API, configure et teste ses routes, puis se branche. Le socle lit alors son catalogue et ses règles d'accès.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { actualiserCatalogue, brancher, ouvrirSession, passerBanc, testerApi } from "../api/connect.js";
 import { BulletinConformite } from "../composants/BulletinConformite.jsx";
+import { definirContexteAssistant } from "../donnees/contexte-assistant.js";
 import { EnTete, PiedDePage } from "../mise-en-page/EnTete.jsx";
 import { PREDICATS, TYPES_DOCUMENT, TYPES_PIECE } from "../noyau/referentiel.js";
 import { Bouton } from "../ui/Bouton.jsx";
 import { Carte } from "../ui/Carte.jsx";
 import { Champ, Coche } from "../ui/Champs.jsx";
 import { Alerte } from "../ui/Signaux.jsx";
+import { DonneesTest } from "../ui/DonneesTest.jsx";
 
 // ── Exemples du contrat ──────────────────────────────────────────────────────
 const EXEMPLE_REPONSE = `[
@@ -156,7 +158,13 @@ function ConnexionService({ onEntree }) {
             </Bouton>
           </div>
         </form>
-        {erreur ? <Alerte ton="ko">{erreur}</Alerte> : null}
+        {erreur ? (
+          <Alerte ton="ko">
+            {erreur}
+            <br />
+            <AideErreur contexte="à l'ouverture de l'espace de branchement (identifiant et code)" message={erreur} />
+          </Alerte>
+        ) : null}
       </Carte>
     </>
   );
@@ -324,7 +332,51 @@ const CALCULS = {
   casier_vierge: { libelle: "Casier judiciaire vierge : oui/non", source: "mentions du casier", url: "https://votre-service/casier", champ: "ex. mentions" },
 };
 
-function ResultatTest({ resultat }) {
+/** Ce que la personne a saisi sur la page, pour l'assistant : jamais le code secret (ids.secret n'y figure pas). */
+function resumeBranchement({ ids, infos, urls, routes, adaptateur, declare, tests, resultat, banc }) {
+  const a = adaptateurAEnvoyer(adaptateur);
+  const lignes = [
+    `Service : ${ids.service_id} (${infos.nom || "?"}) · double API : ${infos.double_api ? "oui" : "non"} · `
+      + (infos.connexion ? `branché le ${infos.connexion.branche_le}` : "pas encore branché"),
+    `Adresses : ${routes.map(([rt]) => `${rt} = ${urls[rt]?.trim() || "(vide)"}`).join(" ; ")}`,
+  ];
+  const reglages = [];
+  if (a.parametre_iu) reglages.push(`paramètre du code unique = ${a.parametre_iu}`);
+  if (a.liste) reglages.push(`chemin de la liste = ${a.liste}`);
+  const champs = Object.entries(a.champs || {}).filter(([, v]) => v).map(([k, v]) => `${k}←${v}`);
+  if (champs.length) reglages.push(`champs : ${champs.join(", ")}`);
+  const types = Object.entries(a.types || {}).map(([k, v]) => `${k}=${v}`);
+  if (types.length) reglages.push(`types : ${types.join(", ")}`);
+  if (infos.double_api) {
+    const v = Object.entries(a.verifier || {}).filter(([, x]) => x).map(([k, x]) => `${k}←${x}`).join(", ");
+    reglages.push(a.verifier_presence ? "vérification : la fiche suffit" : `vérification : ${v || "format du contrat"}`);
+  }
+  Object.entries(a.calculs || {}).forEach(([q, c]) => reglages.push(`calcul ${q} : ${c.url} (champ ${c.champ})`));
+  lignes.push(`Adaptateur : ${reglages.join(" ; ") || "aucun (format du contrat)"}`);
+  if (declare.types.length) lignes.push(`Pièces déclarées sans catalogue : ${declare.types.join(", ")}`);
+  const essais = Object.entries(tests).filter(([, x]) => x && !x.enCours)
+    .map(([k, x]) => `${k} : ${x.ok ? `réussi${x.signature ? ` (signature ${x.signature})` : ""}` : `échec « ${x.msg} »`}`);
+  if (essais.length) lignes.push(`Derniers tests : ${essais.join(" ; ")}`);
+  if (resultat && !resultat.enCours) lignes.push(`Branchement : ${resultat.ok ? "réussi" : `échec « ${resultat.msg} »`}`);
+  if (banc?.resultat) {
+    const echecs = banc.resultat.criteres.filter((c) => c.ok === false).map((c) => `${c.critere} → ${c.detail}`);
+    lignes.push(`Banc : ${banc.resultat.conforme ? "conforme" : "non conforme"} (${banc.resultat.obligatoires_ok}/${banc.resultat.obligatoires} obligatoires) ; échecs : ${echecs.join(" ; ") || "aucun"}`);
+  }
+  return lignes.join("\n").slice(0, 2900);
+}
+
+/** Ouvre l'assistant avec l'erreur déjà rédigée (l'erreur ne contient jamais le code secret). */
+export const demanderAssistant = (texte) => window.dispatchEvent(new CustomEvent("assistant:demander", { detail: texte }));
+
+function AideErreur({ contexte, message }) {
+  return (
+    <button type="button" className="lien-texte aide-erreur" onClick={() => demanderAssistant(`Sur la page de branchement, ${contexte}, j'obtiens : « ${message} ». Que faire ?`)}>
+      💬 Demander à l'assistant
+    </button>
+  );
+}
+
+function ResultatTest({ resultat, contexte }) {
   if (!resultat || resultat.enCours) return null;
   return resultat.ok ? (
     <Alerte ton="ok">
@@ -333,7 +385,15 @@ function ResultatTest({ resultat }) {
       {resultat.signature ? <EtatSignature signature={resultat.signature} /> : null}
     </Alerte>
   ) : (
-    <Alerte ton="ko">{resultat.msg}</Alerte>
+    <Alerte ton="ko">
+      {resultat.msg}
+      {contexte ? (
+        <>
+          <br />
+          <AideErreur contexte={contexte} message={resultat.msg} />
+        </>
+      ) : null}
+    </Alerte>
   );
 }
 
@@ -347,6 +407,11 @@ function Configuration({ ids, infos, onCatalogue, onConnexion }) {
   const [resultat, setResultat] = useState(null);
   const [banc, setBanc] = useState(null);
   const [essais, setEssais] = useState({});
+  // L'assistant voit en permanence ce qui est saisi ici (sans le code secret), pour pointer le réglage exact à corriger.
+  useEffect(() => {
+    definirContexteAssistant(resumeBranchement({ ids, infos, urls, routes, adaptateur, declare, tests, resultat, banc }));
+  });
+  useEffect(() => () => definirContexteAssistant(null), []);
   const routes = ROUTES.filter(([r]) => r !== "verifier" || infos.double_api);
 
   /** À partir de …/documents, propose …/catalogue, …/predicat et …/lien. */
@@ -440,7 +505,7 @@ function Configuration({ ids, infos, onCatalogue, onConnexion }) {
           ) : (
             <p className="sous resume">Testée à la première consultation d'une pièce.</p>
           )}
-          <ResultatTest resultat={tests[r]} />
+          <ResultatTest resultat={tests[r]} contexte={`en testant la route « ${r} »`} />
         </div>
       ))}
 
@@ -509,11 +574,12 @@ function Configuration({ ids, infos, onCatalogue, onConnexion }) {
             <div className="actions">
               <input type="text" inputMode="numeric" maxLength={17} placeholder="Code unique d'une personne connue" aria-label="Code unique d'essai"
                 value={essais[q] || ""} onChange={(e) => setEssais({ ...essais, [q]: e.target.value })} />
+              <DonneesTest profil="calcul" onChoisir={(code) => setEssais({ ...essais, [q]: code })} />
               <Bouton variante="second" petit onClick={() => testerCalcul(q)} enCours={tests[`calcul-${q}`]?.enCours}>
                 Tester le calcul
               </Bouton>
             </div>
-            <ResultatTest resultat={tests[`calcul-${q}`]} />
+            <ResultatTest resultat={tests[`calcul-${q}`]} contexte={`en testant le calcul « ${q} »`} />
           </div>
         ))}
       </details>
@@ -539,13 +605,27 @@ function Configuration({ ids, infos, onCatalogue, onConnexion }) {
           Passer le banc de conformité
         </Bouton>
       </div>
-      <ResultatTest resultat={resultat} />
+      <ResultatTest resultat={resultat} contexte="en cliquant sur « Brancher mon registre »" />
       <p className="sous">
         Le banc vérifie, sans rien brancher, que votre registre respecte le contrat : réponses signées, appels non signés, mal signés ou périmés
         refusés, règles d'accès appliquées, réponses oui/non sans la donnée source. Chaque passage est inscrit au journal.
       </p>
-      {banc?.erreur ? <Alerte ton="ko">{banc.erreur}</Alerte> : null}
+      {banc?.erreur ? (
+        <Alerte ton="ko">
+          {banc.erreur}
+          <br />
+          <AideErreur contexte="en passant le banc de conformité" message={banc.erreur} />
+        </Alerte>
+      ) : null}
       <BulletinConformite resultat={banc?.resultat} />
+      {banc?.resultat && banc.resultat.criteres.some((c) => c.ok === false) ? (
+        <button type="button" className="lien-texte aide-erreur" onClick={() => demanderAssistant(
+          `Le banc de conformité de mon registre indique ${banc.resultat.conforme ? "« Conforme »" : "« Non conforme »"}, avec ces critères en échec : `
+          + banc.resultat.criteres.filter((c) => c.ok === false).map((c) => `${c.critere} (${c.niveau}) → ${c.detail}`).join(" ; ")
+          + ". Comment les corriger ?")}>
+          💬 Demander à l'assistant comment corriger les critères en échec
+        </button>
+      ) : null}
     </Carte>
   );
 }

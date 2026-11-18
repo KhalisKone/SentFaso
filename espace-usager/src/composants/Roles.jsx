@@ -11,6 +11,7 @@ import { AucunResultat, BarreRecherche, useRecherche } from "../ui/Recherche.jsx
 import { Pastille, Retour } from "../ui/Signaux.jsx";
 import { Mono, Tableau } from "../ui/Tableau.jsx";
 import { useToast } from "../ui/Toasts.jsx";
+import { DonneesTest } from "../ui/DonneesTest.jsx";
 
 /**
  * Liste des personnes ayant un rôle.
@@ -94,6 +95,7 @@ export function FormNomination({ titre = "Nommer", role, services, service, libe
     <Carte titre={titre} etroite>
       <form onSubmit={valider}>
         <ChampIu label={libelleIu || "Identifiant unique"} value={iu} onChange={(e) => setIu(e.target.value)} />
+        <DonneesTest profil="nomination" onChoisir={setIu} />
         {services ? <Selection label="Service" value={choix} onChange={(e) => setChoix(e.target.value)} options={services} /> : null}
         <div className="actions">
           <Bouton type="submit" enCours={enCours}>

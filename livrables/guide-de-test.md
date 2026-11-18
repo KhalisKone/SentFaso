@@ -5,6 +5,8 @@ Adresse : https://hack226.185-193-66-4.sslip.io/frontend/ · API documentée : h
 Les identifiants uniques (NIN, 17 chiffres) doivent exister dans le **registre d'identité** (Ministère de la Transition digitale),
 branché en double API. Population fictive : `registres/donnees/personnes.json` (NIN 99000000000000001 à …152 ; certains numéros manquent, ex. 31 et 32).
 
+**Données de test** : en démonstration, le bouton **« 🧪 Données de test »**, sous chaque champ « identifiant unique » (connexion, nouveau dossier, nomination, test d'un calcul), propose les comptes et les personnes de test adaptés à la page ; un clic remplit le champ.
+
 **Connexion (tout le monde)** : saisir le NIN → « Recevoir mon code » → saisir le code à 6 chiffres. En démonstration,
 aucun SMS n'est envoyé : le code s'affiche à l'écran. Il est valable 5 minutes, pour 3 essais.
 
@@ -24,7 +26,7 @@ Créer (ou vérifier) les services ; l'identifiant est tiré du nom, il doit cor
 |---|---|---|---|
 | Ministère de la Transition digitale (case **Double API**) | `ministere-transition-digitale` | registre d'identité (codes uniques) | branché (autre équipe), conforme au banc |
 | Mairie de Ouagadougou | `mairie-de-ouagadougou` | état civil : actes, « majeur : oui/non » | branché (autre équipe) |
-| Tribunal de grande instance de Ouagadougou | `tribunal-de-grande-instance-de-ouagadoug` | casier, « casier vierge : oui/non », certificat de nationalité | créé, branchement en cours (autre équipe) |
+| Tribunal de grande instance de Ouagadougou | `tribunal-de-grande-instance-de-ouagadoug` | casier, « casier vierge : oui/non », certificat de nationalité | branché (autre équipe), conforme au banc |
 | Direction des passeports | `direction-des-passeports` | demandeur (démarche 1) | — |
 | Office national d'identification | `oni` | demandeur (démarche 2) | — |
 | Ministère de la Fonction publique | `ministere-de-la-fonction-publique` | demandeur (démarche 3) | — |
@@ -46,7 +48,7 @@ Nommer ensuite un admin par service demandeur (« Admins des services ») :
 
 ## 2. Chaque registre → /frontend/connect
 
-**État au 18/11/2026** : en ligne, **plus aucun registre simulé**. Les pièces viennent des services d'une autre équipe : le ministère (identité) et la mairie sont branchés, le tribunal est en cours de branchement. Nos registres simulés servent aux essais en local (tests automatiques, parcours complet).
+**État au 18/11/2026** : en ligne, **plus aucun registre simulé**. Les pièces viennent des services d'une autre équipe : le ministère (identité), la mairie et le tribunal sont branchés ; les trois démarches ont été vérifiées en ligne avec eux le 18/11/2026 (code unique 99000000000000036). Nos registres simulés servent aux essais en local (tests automatiques, parcours complet).
 
 Pour brancher un registre : identifiant du service et code secret, puis l'adresse de sa route documents (ex. `https://<adresse du service>/documents`) :
 les autres routes sont proposées automatiquement. Tester, puis « Brancher mon registre » : le catalogue et les règles d'accès sont lus chez le registre.

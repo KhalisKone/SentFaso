@@ -55,7 +55,7 @@ par le service seul (`chmod 600 backend/.env`). Ce fichier n'est jamais publié 
 | `SOCLE_STOCKAGE` | `postgres` (dont Supabase), `sqlite`, `firebase` | **`postgres`** |
 | `DATABASE_URL` | `postgresql://…` (Supabase : chaîne « Session pooler ») ou chemin du fichier SQLite | — |
 | `FIREBASE_CREDENTIALS`, `FIREBASE_DB_URL` | seulement si `SOCLE_STOCKAGE=firebase` | — |
-| `SOCLE_DEMO` | `1` : le code de connexion s'affiche à l'écran (démonstration) | **`0`** |
+| `SOCLE_DEMO` | `1` : démonstration — le code de connexion s'affiche à l'écran et des « données de test » sont proposées | **`0`** |
 | `SIGNATURE_REGISTRE_OBLIGATOIRE` | `1` : toute réponse non signée d'une administration est refusée | **`1`** dès que toutes signent |
 | `ASSISTANT_FOURNISSEUR` | `aucun`, `anthropic` (Claude) ou `compatible-openai` (Mistral, Ollama…) | au choix |
 | `ASSISTANT_URL`, `ASSISTANT_CLE`, `ASSISTANT_MODELE` | adresse du service (compatible OpenAI), clé, nom du modèle | — |

@@ -176,3 +176,33 @@ def test_fournisseur_compatible_openai_avec_appel_de_competence(socle, monkeypat
     assert requetes[0]["model"] == "mistral-small" and requetes[0]["messages"][0]["role"] == "system"
     assert {o["function"]["name"] for o in requetes[0]["tools"]} >= {"mes_demandes"}
     assert socle.get("/assistant/etat").json() == {"actif": True, "fournisseur": "compatible-openai", "modele": "mistral-small"}
+
+
+
+def test_sur_la_page_de_branchement_l_assistant_connait_tout_le_branchement(socle, modele):
+    faux = modele()
+    erreur = "Votre API (https://x/documents) ne répond pas correctement : Client error '401 Unauthorized'"
+    assert socle.post("/assistant/public", json={"message": erreur, "page": "/frontend/connect"}).status_code == 200
+    systeme = " ".join(b["text"] for b in faux.requetes[-1]["system"])
+    assert "Expert du branchement" in systeme and "X-Socle-Signature" in systeme and "équipe technique d'un registre" in systeme
+    assert "invite à se connecter" not in systeme, "sur cette page, la personne n'a pas à se connecter"
+    socle.post("/assistant/public", json={"message": "Bonjour", "page": "/frontend/"})
+    assert "Expert du branchement" not in " ".join(b["text"] for b in faux.requetes[-1]["system"]), "ailleurs : pas ce savoir"
+
+
+def test_un_message_d_erreur_long_peut_etre_colle(socle, modele):
+    modele()
+    assert socle.post("/assistant/public", json={"message": "x" * 3500, "page": "/frontend/connect"}).status_code == 200
+
+
+
+def test_la_configuration_de_la_page_accompagne_la_question_et_le_code_est_masque(socle, modele):
+    faux = modele()
+    conf = "Service : mairie-x · double API : non\nAdresses : documents = https://x/documents ; catalogue = https://x/documents/catalogue"
+    socle.post("/assistant/public", json={"message": "Mon catalogue échoue, mon code est sk_Ab3xYz9QwErTy7UiOp2", "contexte": conf + " sk_FuiteDansLeContexte123",
+                                          "page": "/frontend/connect"})
+    envoye = json.dumps(faux.requetes[-1]["messages"], ensure_ascii=False)
+    assert "https://x/documents/catalogue" in envoye and "Configuration actuelle de ma page de branchement" in envoye
+    assert "sk_Ab3xYz9QwErTy7UiOp2" not in envoye and "sk_FuiteDansLeContexte123" not in envoye and "code secret masqué" in envoye
+    socle.post("/assistant/public", json={"message": "Bonjour", "contexte": conf, "page": "/frontend/"})
+    assert "https://x/documents/catalogue" not in json.dumps(faux.requetes[-1]["messages"]), "ailleurs, pas de configuration jointe"

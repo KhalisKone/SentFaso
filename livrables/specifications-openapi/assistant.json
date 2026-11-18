@@ -274,7 +274,7 @@
         "properties": {
           "message": {
             "type": "string",
-            "maxLength": 2000,
+            "maxLength": 4000,
             "minLength": 1,
             "title": "Message"
           },
@@ -301,6 +301,19 @@
             ],
             "title": "Page",
             "description": "Page où se trouve la personne, pour adapter la réponse."
+          },
+          "contexte": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 3000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contexte",
+            "description": "Page de branchement : configuration saisie (sans code secret)."
           }
         },
         "type": "object",
@@ -313,9 +326,10 @@
         "properties": {
           "message": {
             "type": "string",
-            "maxLength": 1000,
+            "maxLength": 4000,
             "minLength": 1,
-            "title": "Message"
+            "title": "Message",
+            "description": "Question, ou message d'erreur collé (4000 caractères au plus)."
           },
           "historique": {
             "items": {
@@ -336,6 +350,19 @@
               }
             ],
             "title": "Page"
+          },
+          "contexte": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 3000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contexte",
+            "description": "Page de branchement : configuration saisie (sans code secret)."
           }
         },
         "type": "object",

@@ -20,6 +20,7 @@ import { AucunResultat, BarreRecherche, useRecherche } from "../../ui/Recherche.
 import { Alerte, Pastille, Retour, StatutDossier, StatutPiece } from "../../ui/Signaux.jsx";
 import { Mono, Tableau } from "../../ui/Tableau.jsx";
 import { useToast } from "../../ui/Toasts.jsx";
+import { DonneesTest } from "../../ui/DonneesTest.jsx";
 
 /** Registre(s) auprès duquel une pièce ou une réponse sera demandée, tel qu'affiché au guichet. */
 function registreSource(etat, annuaire, type, demandeur) {
@@ -118,6 +119,7 @@ export function NouveauDossier() {
         <form onSubmit={ouvrir}>
           <Etape n="1" titre="Identité du citoyen">
             <label htmlFor="nd-iu">Identifiant unique (NIN, en haut de la CNIB)</label>
+            <DonneesTest profil="dossier" onChoisir={(code) => { setIu(code); setTitulaire(null); }} />
             <div className="ligne-champ">
               <input
                 id="nd-iu"

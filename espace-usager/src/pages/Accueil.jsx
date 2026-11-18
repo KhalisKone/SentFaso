@@ -15,6 +15,7 @@ import { Carte } from "../ui/Carte.jsx";
 import { Champ } from "../ui/Champs.jsx";
 import { cls } from "../ui/cls.js";
 import { Alerte } from "../ui/Signaux.jsx";
+import { DonneesTest } from "../ui/DonneesTest.jsx";
 
 /** Connexion en deux étapes : identifiant unique, puis code à usage unique reçu par SMS (affiché à l'écran en démonstration). */
 function Connexion() {
@@ -73,6 +74,7 @@ function Connexion() {
               setErreur(null);
             }}
           />
+          <DonneesTest profil="connexion" onChoisir={(code) => { setSaisie(code); setErreur(null); }} />
           <div className="actions">
             <Bouton type="submit" enCours={enCours}>
               Recevoir mon code →
