@@ -1,0 +1,52 @@
+Résultats des tests — Dites-le-nous une fois — 18/11/2026 13:42
+Commande : outils/tester.sh
+
+── registres ──
+........                                                                 [100%]
+8 passed in 0.37s
+── passerelle ──
+...........................                                              [100%]
+27 passed in 2.84s
+── consentement ──
+.......                                                                  [100%]
+7 passed in 0.42s
+── journal ──
+........                                                                 [100%]
+8 passed in 0.61s
+── assistant ──
+...........                                                              [100%]
+11 passed in 0.55s
+── backend ──
+...........s                                                             [100%]
+11 passed, 1 skipped in 0.62s
+── espace-usager : tests unitaires ──
+
+ RUN  v2.1.8 /home/rakine/hack226/espace-usager
+
+ ✓ tests/unitaires/fiche-pdf.test.js (4 tests) 11ms
+ ✓ tests/unitaires/recherche.test.js (3 tests) 7ms
+ ✓ tests/unitaires/noyau.test.js (7 tests) 19ms
+ ✓ tests/unitaires/annuaire-et-recherche.test.js (4 tests) 17ms
+
+ Test Files  4 passed (4)
+      Tests  18 passed (18)
+   Start at  13:42:52
+   Duration  980ms (transform 404ms, setup 0ms, collect 689ms, tests 53ms, environment 2ms, prepare 1.35s)
+
+── espace-usager : parcours de bout en bout (navigateur) ──
+1. Trois démarches sans pièce à fournir
+  ✓ Demande de passeport : 4 pièce(s), toutes obtenues (Obtenue, Obtenue, Répondu, Répondu)
+  ✓ Demande de passeport : pièce ouverte chez le registre par un lien signé
+  ✓ Établissement de la CNIB : 3 pièce(s), toutes obtenues (Obtenue, Obtenue, Répondu)
+  ✓ Établissement de la CNIB : pièce ouverte chez le registre par un lien signé
+  ✓ Candidature à un concours : 4 pièce(s), toutes obtenues (Obtenue, Obtenue, Obtenue, Répondu)
+  ✓ Candidature à un concours : pièce ouverte chez le registre par un lien signé
+2. L'usager retrouve les consultations dans son espace
+  ✓ les 3 consultations des agents sont visibles
+  ✓ les échanges de la passerelle sont visibles
+  ✓ les réponses minimales (majeur, casier vierge) sont visibles
+3. Le citoyen n'a rien à accepter ni à régler
+  ✓ aucun paramètre ni bouton d'accord dans l'espace citoyen
+  ✓ aucune erreur JavaScript (0)
+
+RÉSULTAT : tout est vert

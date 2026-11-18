@@ -1,0 +1,5046 @@
+{
+ "personnes": {
+  "99000000000000001": {
+   "nom": "KABORE",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000003": {
+   "nom": "KABORE",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000004": {
+   "nom": "COMPAORE",
+   "prenoms": "Salif",
+   "casier_vierge": true
+  },
+  "99000000000000005": {
+   "nom": "ZONGO",
+   "prenoms": "Mariam",
+   "casier_vierge": true
+  },
+  "99000000000000006": {
+   "nom": "TRAORE",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000007": {
+   "nom": "OUATTARA",
+   "prenoms": "Drissa",
+   "casier_vierge": true
+  },
+  "99000000000000008": {
+   "nom": "OUATTARA",
+   "prenoms": "Awa",
+   "casier_vierge": true
+  },
+  "99000000000000009": {
+   "nom": "SANOU",
+   "prenoms": "Jean-Baptiste",
+   "casier_vierge": true
+  },
+  "99000000000000010": {
+   "nom": "ILBOUDO",
+   "prenoms": "Rasmané",
+   "casier_vierge": true
+  },
+  "99000000000000011": {
+   "nom": "KONATE",
+   "prenoms": "Adama",
+   "casier_vierge": true
+  },
+  "99000000000000012": {
+   "nom": "SOME",
+   "prenoms": "Edwige",
+   "casier_vierge": true
+  },
+  "99000000000000013": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Hamidou",
+   "casier_vierge": true
+  },
+  "99000000000000014": {
+   "nom": "NIKIEMA",
+   "prenoms": "Pascal",
+   "casier_vierge": true
+  },
+  "99000000000000015": {
+   "nom": "YAMEOGO",
+   "prenoms": "Clarisse",
+   "casier_vierge": true
+  },
+  "99000000000000016": {
+   "nom": "KABRE",
+   "prenoms": "Désiré",
+   "casier_vierge": true
+  },
+  "99000000000000017": {
+   "nom": "DIALLO",
+   "prenoms": "Aïssata",
+   "casier_vierge": false
+  },
+  "99000000000000018": {
+   "nom": "BARRY",
+   "prenoms": "Oumar",
+   "casier_vierge": true
+  },
+  "99000000000000019": {
+   "nom": "KAFANDO",
+   "prenoms": "Rosalie",
+   "casier_vierge": true
+  },
+  "99000000000000020": {
+   "nom": "TAPSOBA",
+   "prenoms": "Boukary",
+   "casier_vierge": true
+  },
+  "99000000000000021": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Sylvie",
+   "casier_vierge": true
+  },
+  "99000000000000022": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Arouna",
+   "casier_vierge": true
+  },
+  "99000000000000023": {
+   "nom": "ROAMBA",
+   "prenoms": "Nafissatou",
+   "casier_vierge": true
+  },
+  "99000000000000025": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Rasmata",
+   "casier_vierge": true
+  },
+  "99000000000000026": {
+   "nom": "NACANABO",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000027": {
+   "nom": "GUIRO",
+   "prenoms": "Moussa",
+   "casier_vierge": true
+  },
+  "99000000000000028": {
+   "nom": "SORE",
+   "prenoms": "Henriette",
+   "casier_vierge": true
+  },
+  "99000000000000029": {
+   "nom": "ZERBO",
+   "prenoms": "Abdoulaye",
+   "casier_vierge": true
+  },
+  "99000000000000030": {
+   "nom": "DABIRE",
+   "prenoms": "Christine",
+   "casier_vierge": true
+  },
+  "99000000000000033": {
+   "nom": "ROUAMBA",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000034": {
+   "nom": "SAWADOGO",
+   "prenoms": "Assèta",
+   "casier_vierge": false
+  },
+  "99000000000000035": {
+   "nom": "OUATTARA",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000036": {
+   "nom": "TAPSOBA",
+   "prenoms": "Alimata",
+   "casier_vierge": true
+  },
+  "99000000000000037": {
+   "nom": "KINDA",
+   "prenoms": "Tasséré",
+   "casier_vierge": true
+  },
+  "99000000000000038": {
+   "nom": "NACOULMA",
+   "prenoms": "Habibou",
+   "casier_vierge": true
+  },
+  "99000000000000039": {
+   "nom": "ZONGO",
+   "prenoms": "Arouna",
+   "casier_vierge": true
+  },
+  "99000000000000040": {
+   "nom": "NIKIEMA",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  },
+  "99000000000000041": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Daouda",
+   "casier_vierge": true
+  },
+  "99000000000000042": {
+   "nom": "GUIRA",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000043": {
+   "nom": "KABORE",
+   "prenoms": "Seydou",
+   "casier_vierge": true
+  },
+  "99000000000000044": {
+   "nom": "DIALLO",
+   "prenoms": "Salamata",
+   "casier_vierge": true
+  },
+  "99000000000000045": {
+   "nom": "SOME",
+   "prenoms": "Salif",
+   "casier_vierge": true
+  },
+  "99000000000000046": {
+   "nom": "SIMPORE",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000047": {
+   "nom": "BARRY",
+   "prenoms": "Moussa",
+   "casier_vierge": true
+  },
+  "99000000000000048": {
+   "nom": "SANOU",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000049": {
+   "nom": "YAMEOGO",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000050": {
+   "nom": "BAGRE",
+   "prenoms": "Adjaratou",
+   "casier_vierge": true
+  },
+  "99000000000000051": {
+   "nom": "PODA",
+   "prenoms": "Karim",
+   "casier_vierge": false
+  },
+  "99000000000000052": {
+   "nom": "TRAORE",
+   "prenoms": "Nafissatou",
+   "casier_vierge": true
+  },
+  "99000000000000053": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000054": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Rosalie",
+   "casier_vierge": true
+  },
+  "99000000000000055": {
+   "nom": "CONGO",
+   "prenoms": "Mahamadi",
+   "casier_vierge": true
+  },
+  "99000000000000057": {
+   "nom": "ILBOUDO",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000058": {
+   "nom": "DABIRE",
+   "prenoms": "Assèta",
+   "casier_vierge": true
+  },
+  "99000000000000059": {
+   "nom": "KAFANDO",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000060": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Alimata",
+   "casier_vierge": true
+  },
+  "99000000000000061": {
+   "nom": "KONATE",
+   "prenoms": "Tasséré",
+   "casier_vierge": true
+  },
+  "99000000000000062": {
+   "nom": "KAMBOU",
+   "prenoms": "Habibou",
+   "casier_vierge": true
+  },
+  "99000000000000063": {
+   "nom": "ROUAMBA",
+   "prenoms": "Arouna",
+   "casier_vierge": true
+  },
+  "99000000000000064": {
+   "nom": "SAWADOGO",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  },
+  "99000000000000065": {
+   "nom": "OUATTARA",
+   "prenoms": "Daouda",
+   "casier_vierge": true
+  },
+  "99000000000000066": {
+   "nom": "TAPSOBA",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000067": {
+   "nom": "KINDA",
+   "prenoms": "Seydou",
+   "casier_vierge": true
+  },
+  "99000000000000068": {
+   "nom": "NACOULMA",
+   "prenoms": "Salamata",
+   "casier_vierge": false
+  },
+  "99000000000000069": {
+   "nom": "ZONGO",
+   "prenoms": "Salif",
+   "casier_vierge": true
+  },
+  "99000000000000070": {
+   "nom": "NIKIEMA",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000071": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Moussa",
+   "casier_vierge": true
+  },
+  "99000000000000072": {
+   "nom": "GUIRA",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000073": {
+   "nom": "KABORE",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000074": {
+   "nom": "DIALLO",
+   "prenoms": "Adjaratou",
+   "casier_vierge": true
+  },
+  "99000000000000075": {
+   "nom": "SOME",
+   "prenoms": "Karim",
+   "casier_vierge": true
+  },
+  "99000000000000076": {
+   "nom": "SIMPORE",
+   "prenoms": "Nafissatou",
+   "casier_vierge": true
+  },
+  "99000000000000077": {
+   "nom": "BARRY",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000078": {
+   "nom": "SANOU",
+   "prenoms": "Rosalie",
+   "casier_vierge": true
+  },
+  "99000000000000079": {
+   "nom": "YAMEOGO",
+   "prenoms": "Mahamadi",
+   "casier_vierge": true
+  },
+  "99000000000000080": {
+   "nom": "BAGRE",
+   "prenoms": "Christine",
+   "casier_vierge": true
+  },
+  "99000000000000081": {
+   "nom": "PODA",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000082": {
+   "nom": "TRAORE",
+   "prenoms": "Assèta",
+   "casier_vierge": true
+  },
+  "99000000000000083": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000084": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Alimata",
+   "casier_vierge": true
+  },
+  "99000000000000085": {
+   "nom": "CONGO",
+   "prenoms": "Tasséré",
+   "casier_vierge": false
+  },
+  "99000000000000086": {
+   "nom": "COMPAORE",
+   "prenoms": "Habibou",
+   "casier_vierge": true
+  },
+  "99000000000000087": {
+   "nom": "ILBOUDO",
+   "prenoms": "Arouna",
+   "casier_vierge": true
+  },
+  "99000000000000088": {
+   "nom": "DABIRE",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  },
+  "99000000000000090": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000091": {
+   "nom": "KONATE",
+   "prenoms": "Seydou",
+   "casier_vierge": true
+  },
+  "99000000000000092": {
+   "nom": "KAMBOU",
+   "prenoms": "Salamata",
+   "casier_vierge": true
+  },
+  "99000000000000093": {
+   "nom": "ROUAMBA",
+   "prenoms": "Salif",
+   "casier_vierge": true
+  },
+  "99000000000000094": {
+   "nom": "SAWADOGO",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000095": {
+   "nom": "OUATTARA",
+   "prenoms": "Moussa",
+   "casier_vierge": true
+  },
+  "99000000000000096": {
+   "nom": "TAPSOBA",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000097": {
+   "nom": "KINDA",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000098": {
+   "nom": "NACOULMA",
+   "prenoms": "Adjaratou",
+   "casier_vierge": true
+  },
+  "99000000000000099": {
+   "nom": "ZONGO",
+   "prenoms": "Karim",
+   "casier_vierge": true
+  },
+  "99000000000000100": {
+   "nom": "NIKIEMA",
+   "prenoms": "Nafissatou",
+   "casier_vierge": true
+  },
+  "99000000000000101": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000102": {
+   "nom": "GUIRA",
+   "prenoms": "Rosalie",
+   "casier_vierge": false
+  },
+  "99000000000000103": {
+   "nom": "KABORE",
+   "prenoms": "Mahamadi",
+   "casier_vierge": true
+  },
+  "99000000000000104": {
+   "nom": "DIALLO",
+   "prenoms": "Christine",
+   "casier_vierge": true
+  },
+  "99000000000000105": {
+   "nom": "SOME",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000106": {
+   "nom": "SIMPORE",
+   "prenoms": "Assèta",
+   "casier_vierge": true
+  },
+  "99000000000000107": {
+   "nom": "BARRY",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000108": {
+   "nom": "SANOU",
+   "prenoms": "Alimata",
+   "casier_vierge": true
+  },
+  "99000000000000109": {
+   "nom": "YAMEOGO",
+   "prenoms": "Tasséré",
+   "casier_vierge": true
+  },
+  "99000000000000110": {
+   "nom": "BAGRE",
+   "prenoms": "Habibou",
+   "casier_vierge": true
+  },
+  "99000000000000111": {
+   "nom": "PODA",
+   "prenoms": "Arouna",
+   "casier_vierge": true
+  },
+  "99000000000000112": {
+   "nom": "TRAORE",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  },
+  "99000000000000113": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Daouda",
+   "casier_vierge": true
+  },
+  "99000000000000114": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000115": {
+   "nom": "CONGO",
+   "prenoms": "Seydou",
+   "casier_vierge": true
+  },
+  "99000000000000116": {
+   "nom": "COMPAORE",
+   "prenoms": "Salamata",
+   "casier_vierge": true
+  },
+  "99000000000000118": {
+   "nom": "DABIRE",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000119": {
+   "nom": "KAFANDO",
+   "prenoms": "Moussa",
+   "casier_vierge": false
+  },
+  "99000000000000120": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000121": {
+   "nom": "KONATE",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000122": {
+   "nom": "KAMBOU",
+   "prenoms": "Adjaratou",
+   "casier_vierge": true
+  },
+  "99000000000000123": {
+   "nom": "ROUAMBA",
+   "prenoms": "Karim",
+   "casier_vierge": true
+  },
+  "99000000000000124": {
+   "nom": "SAWADOGO",
+   "prenoms": "Nafissatou",
+   "casier_vierge": true
+  },
+  "99000000000000125": {
+   "nom": "OUATTARA",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000126": {
+   "nom": "TAPSOBA",
+   "prenoms": "Rosalie",
+   "casier_vierge": true
+  },
+  "99000000000000127": {
+   "nom": "KINDA",
+   "prenoms": "Mahamadi",
+   "casier_vierge": true
+  },
+  "99000000000000128": {
+   "nom": "NACOULMA",
+   "prenoms": "Christine",
+   "casier_vierge": true
+  },
+  "99000000000000129": {
+   "nom": "ZONGO",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000130": {
+   "nom": "NIKIEMA",
+   "prenoms": "Assèta",
+   "casier_vierge": true
+  },
+  "99000000000000131": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000132": {
+   "nom": "GUIRA",
+   "prenoms": "Alimata",
+   "casier_vierge": true
+  },
+  "99000000000000133": {
+   "nom": "KONATE",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000134": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000135": {
+   "nom": "KABORE",
+   "prenoms": "Karim",
+   "casier_vierge": true
+  },
+  "99000000000000136": {
+   "nom": "TAPSOBA",
+   "prenoms": "Salamata",
+   "casier_vierge": false
+  },
+  "99000000000000137": {
+   "nom": "KAFANDO",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000138": {
+   "nom": "SANOU",
+   "prenoms": "Pauline",
+   "casier_vierge": true
+  },
+  "99000000000000139": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000140": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  },
+  "99000000000000141": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Issaka",
+   "casier_vierge": true
+  },
+  "99000000000000142": {
+   "nom": "SIMPORE",
+   "prenoms": "Habibou",
+   "casier_vierge": true
+  },
+  "99000000000000143": {
+   "nom": "OUATTARA",
+   "prenoms": "Mahamadi",
+   "casier_vierge": true
+  },
+  "99000000000000144": {
+   "nom": "DABIRE",
+   "prenoms": "Aminata",
+   "casier_vierge": true
+  },
+  "99000000000000145": {
+   "nom": "PODA",
+   "prenoms": "Joseph",
+   "casier_vierge": true
+  },
+  "99000000000000146": {
+   "nom": "NIKIEMA",
+   "prenoms": "Fatimata",
+   "casier_vierge": true
+  },
+  "99000000000000147": {
+   "nom": "ROUAMBA",
+   "prenoms": "Karim",
+   "casier_vierge": true
+  },
+  "99000000000000148": {
+   "nom": "TRAORE",
+   "prenoms": "Salamata",
+   "casier_vierge": true
+  },
+  "99000000000000149": {
+   "nom": "SOME",
+   "prenoms": "Bernard",
+   "casier_vierge": true
+  },
+  "99000000000000151": {
+   "nom": "ILBOUDO",
+   "prenoms": "Hamado",
+   "casier_vierge": true
+  },
+  "99000000000000152": {
+   "nom": "BAGRE",
+   "prenoms": "Germaine",
+   "casier_vierge": true
+  }
+ },
+ "documents": {
+  "99000000000000001": [
+   {
+    "id": "CJ3-2026-00001",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "14/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000001"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000003": [
+   {
+    "id": "CJ3-2026-00003",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "14/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000003"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000004": [
+   {
+    "id": "CJ3-2026-00004",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "30/11/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000004"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000005": [
+   {
+    "id": "CJ3-2026-00005",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Mariam"
+     ],
+     [
+      "Né(e) le",
+      "16/11/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000005"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000006": [
+   {
+    "id": "CJ3-2026-00006",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "17/11/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000006"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000007": [
+   {
+    "id": "CJ3-2026-00007",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Drissa"
+     ],
+     [
+      "Né(e) le",
+      "08/01/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000007"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000008": [
+   {
+    "id": "CJ3-2026-00008",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Awa"
+     ],
+     [
+      "Né(e) le",
+      "22/04/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000008"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000009": [
+   {
+    "id": "CJ3-2026-00009",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Jean-Baptiste"
+     ],
+     [
+      "Né(e) le",
+      "15/08/1990"
+     ],
+     [
+      "NIN",
+      "99000000000000009"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000010": [
+   {
+    "id": "CJ3-2026-00010",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Rasmané"
+     ],
+     [
+      "Né(e) le",
+      "20/02/1975"
+     ],
+     [
+      "NIN",
+      "99000000000000010"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000011": [
+   {
+    "id": "CJ3-2026-00011",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Adama"
+     ],
+     [
+      "Né(e) le",
+      "11/07/1982"
+     ],
+     [
+      "NIN",
+      "99000000000000011"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000012": [
+   {
+    "id": "CJ3-2026-00012",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Edwige"
+     ],
+     [
+      "Né(e) le",
+      "03/12/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000012"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000013": [
+   {
+    "id": "CJ3-2026-00013",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Hamidou"
+     ],
+     [
+      "Né(e) le",
+      "27/05/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000013"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000014": [
+   {
+    "id": "CJ3-2026-00014",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Pascal"
+     ],
+     [
+      "Né(e) le",
+      "09/09/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000014"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000015": [
+   {
+    "id": "CJ3-2026-00015",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Clarisse"
+     ],
+     [
+      "Né(e) le",
+      "18/03/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000015"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000016": [
+   {
+    "id": "CJ3-2026-00016",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABRE"
+     ],
+     [
+      "Prénoms",
+      "Désiré"
+     ],
+     [
+      "Né(e) le",
+      "01/10/1999"
+     ],
+     [
+      "NIN",
+      "99000000000000016"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000017": [
+   {
+    "id": "CJ3-2026-00017",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Aïssata"
+     ],
+     [
+      "Né(e) le",
+      "25/01/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000017"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000018": [
+   {
+    "id": "CJ3-2026-00018",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Oumar"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000018"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000019": [
+   {
+    "id": "CJ3-2026-00019",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "07/07/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000019"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000020": [
+   {
+    "id": "CJ3-2026-00020",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Boukary"
+     ],
+     [
+      "Né(e) le",
+      "12/11/1972"
+     ],
+     [
+      "NIN",
+      "99000000000000020"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000021": [
+   {
+    "id": "CJ3-2026-00021",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Sylvie"
+     ],
+     [
+      "Né(e) le",
+      "29/02/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000021"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000022": [
+   {
+    "id": "CJ3-2026-00022",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "19/06/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000022"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000023": [
+   {
+    "id": "CJ3-2026-00023",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROAMBA"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "30/09/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000023"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000025": [
+   {
+    "id": "CJ3-2026-00025",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Rasmata"
+     ],
+     [
+      "Né(e) le",
+      "14/02/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000025"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000026": [
+   {
+    "id": "CJ3-2026-00026",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NACANABO"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "08/03/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000026"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000027": [
+   {
+    "id": "CJ3-2026-00027",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "GUIRO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "17/01/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000027"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000028": [
+   {
+    "id": "CJ3-2026-00028",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SORE"
+     ],
+     [
+      "Prénoms",
+      "Henriette"
+     ],
+     [
+      "Né(e) le",
+      "23/05/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000028"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000029": [
+   {
+    "id": "CJ3-2026-00029",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZERBO"
+     ],
+     [
+      "Prénoms",
+      "Abdoulaye"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000029"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000030": [
+   {
+    "id": "CJ3-2026-00030",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "10/10/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000030"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000033": [
+   {
+    "id": "CJ3-2026-00033",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "10/10/1951"
+     ],
+     [
+      "NIN",
+      "99000000000000033"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000034": [
+   {
+    "id": "CJ3-2026-00034",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "23/03/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000034"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000035": [
+   {
+    "id": "CJ3-2026-00035",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1964"
+     ],
+     [
+      "NIN",
+      "99000000000000035"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000036": [
+   {
+    "id": "CJ3-2026-00036",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "21/01/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000036"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000037": [
+   {
+    "id": "CJ3-2026-00037",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "06/06/1977"
+     ],
+     [
+      "NIN",
+      "99000000000000037"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000038": [
+   {
+    "id": "CJ3-2026-00038",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "19/11/1953"
+     ],
+     [
+      "NIN",
+      "99000000000000038"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000039": [
+   {
+    "id": "CJ3-2026-00039",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1990"
+     ],
+     [
+      "NIN",
+      "99000000000000039"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000040": [
+   {
+    "id": "CJ3-2026-00040",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "17/09/1966"
+     ],
+     [
+      "NIN",
+      "99000000000000040"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000041": [
+   {
+    "id": "CJ3-2026-00041",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "02/02/2003"
+     ],
+     [
+      "NIN",
+      "99000000000000041"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000042": [
+   {
+    "id": "CJ3-2026-00042",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "15/07/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000042"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000043": [
+   {
+    "id": "CJ3-2026-00043",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "28/12/1955"
+     ],
+     [
+      "NIN",
+      "99000000000000043"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000044": [
+   {
+    "id": "CJ3-2026-00044",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "13/05/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000044"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000045": [
+   {
+    "id": "CJ3-2026-00045",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "26/10/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000045"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000046": [
+   {
+    "id": "CJ3-2026-00046",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "11/03/2005"
+     ],
+     [
+      "NIN",
+      "99000000000000046"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000047": [
+   {
+    "id": "CJ3-2026-00047",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "24/08/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000047"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000048": [
+   {
+    "id": "CJ3-2026-00048",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "09/01/1957"
+     ],
+     [
+      "NIN",
+      "99000000000000048"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000049": [
+   {
+    "id": "CJ3-2026-00049",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "22/06/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000049"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000050": [
+   {
+    "id": "CJ3-2026-00050",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "07/11/1970"
+     ],
+     [
+      "NIN",
+      "99000000000000050"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000051": [
+   {
+    "id": "CJ3-2026-00051",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "20/04/2007"
+     ],
+     [
+      "NIN",
+      "99000000000000051"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000052": [
+   {
+    "id": "CJ3-2026-00052",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "05/09/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000052"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000053": [
+   {
+    "id": "CJ3-2026-00053",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "18/02/1959"
+     ],
+     [
+      "NIN",
+      "99000000000000053"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000054": [
+   {
+    "id": "CJ3-2026-00054",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "03/07/1996"
+     ],
+     [
+      "NIN",
+      "99000000000000054"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000055": [
+   {
+    "id": "CJ3-2026-00055",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "16/12/1972"
+     ],
+     [
+      "NIN",
+      "99000000000000055"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000057": [
+   {
+    "id": "CJ3-2026-00057",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "14/10/1985"
+     ],
+     [
+      "NIN",
+      "99000000000000057"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000058": [
+   {
+    "id": "CJ3-2026-00058",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "27/03/1961"
+     ],
+     [
+      "NIN",
+      "99000000000000058"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000059": [
+   {
+    "id": "CJ3-2026-00059",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "12/08/1998"
+     ],
+     [
+      "NIN",
+      "99000000000000059"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000060": [
+   {
+    "id": "CJ3-2026-00060",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "25/01/1974"
+     ],
+     [
+      "NIN",
+      "99000000000000060"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000061": [
+   {
+    "id": "CJ3-2026-00061",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "10/06/1950"
+     ],
+     [
+      "NIN",
+      "99000000000000061"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000062": [
+   {
+    "id": "CJ3-2026-00062",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "23/11/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000062"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000063": [
+   {
+    "id": "CJ3-2026-00063",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "08/04/1963"
+     ],
+     [
+      "NIN",
+      "99000000000000063"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000064": [
+   {
+    "id": "CJ3-2026-00064",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "21/09/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000064"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000065": [
+   {
+    "id": "CJ3-2026-00065",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "06/02/1976"
+     ],
+     [
+      "NIN",
+      "99000000000000065"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000066": [
+   {
+    "id": "CJ3-2026-00066",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "19/07/1952"
+     ],
+     [
+      "NIN",
+      "99000000000000066"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000067": [
+   {
+    "id": "CJ3-2026-00067",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "04/12/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000067"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000068": [
+   {
+    "id": "CJ3-2026-00068",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "17/05/1965"
+     ],
+     [
+      "NIN",
+      "99000000000000068"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000069": [
+   {
+    "id": "CJ3-2026-00069",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "02/10/2002"
+     ],
+     [
+      "NIN",
+      "99000000000000069"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000070": [
+   {
+    "id": "CJ3-2026-00070",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "15/03/1978"
+     ],
+     [
+      "NIN",
+      "99000000000000070"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000071": [
+   {
+    "id": "CJ3-2026-00071",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "28/08/1954"
+     ],
+     [
+      "NIN",
+      "99000000000000071"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000072": [
+   {
+    "id": "CJ3-2026-00072",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "13/01/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000072"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000073": [
+   {
+    "id": "CJ3-2026-00073",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "26/06/1967"
+     ],
+     [
+      "NIN",
+      "99000000000000073"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000074": [
+   {
+    "id": "CJ3-2026-00074",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "11/11/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000074"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000075": [
+   {
+    "id": "CJ3-2026-00075",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "24/04/1980"
+     ],
+     [
+      "NIN",
+      "99000000000000075"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000076": [
+   {
+    "id": "CJ3-2026-00076",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "09/09/1956"
+     ],
+     [
+      "NIN",
+      "99000000000000076"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000077": [
+   {
+    "id": "CJ3-2026-00077",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "22/02/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000077"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000078": [
+   {
+    "id": "CJ3-2026-00078",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "07/07/1969"
+     ],
+     [
+      "NIN",
+      "99000000000000078"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000079": [
+   {
+    "id": "CJ3-2026-00079",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "20/12/2006"
+     ],
+     [
+      "NIN",
+      "99000000000000079"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000080": [
+   {
+    "id": "CJ3-2026-00080",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "05/05/1982"
+     ],
+     [
+      "NIN",
+      "99000000000000080"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000081": [
+   {
+    "id": "CJ3-2026-00081",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "18/10/1958"
+     ],
+     [
+      "NIN",
+      "99000000000000081"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000082": [
+   {
+    "id": "CJ3-2026-00082",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "03/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000082"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000083": [
+   {
+    "id": "CJ3-2026-00083",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "16/08/1971"
+     ],
+     [
+      "NIN",
+      "99000000000000083"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000084": [
+   {
+    "id": "CJ3-2026-00084",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "01/01/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000084"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000085": [
+   {
+    "id": "CJ3-2026-00085",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "14/06/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000085"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000086": [
+   {
+    "id": "CJ3-2026-00086",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "27/11/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000086"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000087": [
+   {
+    "id": "CJ3-2026-00087",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "12/04/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000087"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000088": [
+   {
+    "id": "CJ3-2026-00088",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "25/09/1973"
+     ],
+     [
+      "NIN",
+      "99000000000000088"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000090": [
+   {
+    "id": "CJ3-2026-00090",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "23/07/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000090"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000091": [
+   {
+    "id": "CJ3-2026-00091",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "08/12/1962"
+     ],
+     [
+      "NIN",
+      "99000000000000091"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000092": [
+   {
+    "id": "CJ3-2026-00092",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "21/05/1999"
+     ],
+     [
+      "NIN",
+      "99000000000000092"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000093": [
+   {
+    "id": "CJ3-2026-00093",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "06/10/1975"
+     ],
+     [
+      "NIN",
+      "99000000000000093"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000094": [
+   {
+    "id": "CJ3-2026-00094",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "19/03/1951"
+     ],
+     [
+      "NIN",
+      "99000000000000094"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000095": [
+   {
+    "id": "CJ3-2026-00095",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "04/08/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000095"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000096": [
+   {
+    "id": "CJ3-2026-00096",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "17/01/1964"
+     ],
+     [
+      "NIN",
+      "99000000000000096"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000097": [
+   {
+    "id": "CJ3-2026-00097",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "02/06/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000097"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000098": [
+   {
+    "id": "CJ3-2026-00098",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "15/11/1977"
+     ],
+     [
+      "NIN",
+      "99000000000000098"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000099": [
+   {
+    "id": "CJ3-2026-00099",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "28/04/1953"
+     ],
+     [
+      "NIN",
+      "99000000000000099"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000100": [
+   {
+    "id": "CJ3-2026-00100",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "13/09/1990"
+     ],
+     [
+      "NIN",
+      "99000000000000100"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000101": [
+   {
+    "id": "CJ3-2026-00101",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "26/02/1966"
+     ],
+     [
+      "NIN",
+      "99000000000000101"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000102": [
+   {
+    "id": "CJ3-2026-00102",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "11/07/2003"
+     ],
+     [
+      "NIN",
+      "99000000000000102"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000103": [
+   {
+    "id": "CJ3-2026-00103",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "24/12/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000103"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000104": [
+   {
+    "id": "CJ3-2026-00104",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "09/05/1955"
+     ],
+     [
+      "NIN",
+      "99000000000000104"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000105": [
+   {
+    "id": "CJ3-2026-00105",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "22/10/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000105"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000106": [
+   {
+    "id": "CJ3-2026-00106",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "07/03/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000106"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000107": [
+   {
+    "id": "CJ3-2026-00107",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "20/08/2005"
+     ],
+     [
+      "NIN",
+      "99000000000000107"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000108": [
+   {
+    "id": "CJ3-2026-00108",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "05/01/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000108"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000109": [
+   {
+    "id": "CJ3-2026-00109",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "18/06/1957"
+     ],
+     [
+      "NIN",
+      "99000000000000109"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000110": [
+   {
+    "id": "CJ3-2026-00110",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "03/11/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000110"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000111": [
+   {
+    "id": "CJ3-2026-00111",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "16/04/1970"
+     ],
+     [
+      "NIN",
+      "99000000000000111"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000112": [
+   {
+    "id": "CJ3-2026-00112",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "01/09/2007"
+     ],
+     [
+      "NIN",
+      "99000000000000112"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000113": [
+   {
+    "id": "CJ3-2026-00113",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "14/02/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000113"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000114": [
+   {
+    "id": "CJ3-2026-00114",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "27/07/1959"
+     ],
+     [
+      "NIN",
+      "99000000000000114"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000115": [
+   {
+    "id": "CJ3-2026-00115",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "12/12/1996"
+     ],
+     [
+      "NIN",
+      "99000000000000115"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000116": [
+   {
+    "id": "CJ3-2026-00116",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "25/05/1972"
+     ],
+     [
+      "NIN",
+      "99000000000000116"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000118": [
+   {
+    "id": "CJ3-2026-00118",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "23/03/1985"
+     ],
+     [
+      "NIN",
+      "99000000000000118"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000119": [
+   {
+    "id": "CJ3-2026-00119",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1961"
+     ],
+     [
+      "NIN",
+      "99000000000000119"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000120": [
+   {
+    "id": "CJ3-2026-00120",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "21/01/1998"
+     ],
+     [
+      "NIN",
+      "99000000000000120"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000121": [
+   {
+    "id": "CJ3-2026-00121",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "06/06/1974"
+     ],
+     [
+      "NIN",
+      "99000000000000121"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000122": [
+   {
+    "id": "CJ3-2026-00122",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "19/11/1950"
+     ],
+     [
+      "NIN",
+      "99000000000000122"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000123": [
+   {
+    "id": "CJ3-2026-00123",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000123"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000124": [
+   {
+    "id": "CJ3-2026-00124",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "17/09/1963"
+     ],
+     [
+      "NIN",
+      "99000000000000124"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000125": [
+   {
+    "id": "CJ3-2026-00125",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "02/02/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000125"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000126": [
+   {
+    "id": "CJ3-2026-00126",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "15/07/1976"
+     ],
+     [
+      "NIN",
+      "99000000000000126"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000127": [
+   {
+    "id": "CJ3-2026-00127",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "28/12/1952"
+     ],
+     [
+      "NIN",
+      "99000000000000127"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000128": [
+   {
+    "id": "CJ3-2026-00128",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "13/05/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000128"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000129": [
+   {
+    "id": "CJ3-2026-00129",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "26/10/1965"
+     ],
+     [
+      "NIN",
+      "99000000000000129"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000130": [
+   {
+    "id": "CJ3-2026-00130",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "11/03/2002"
+     ],
+     [
+      "NIN",
+      "99000000000000130"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000131": [
+   {
+    "id": "CJ3-2026-00131",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "24/08/1978"
+     ],
+     [
+      "NIN",
+      "99000000000000131"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000132": [
+   {
+    "id": "CJ3-2026-00132",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "09/01/1954"
+     ],
+     [
+      "NIN",
+      "99000000000000132"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000133": [
+   {
+    "id": "CJ3-2026-00133",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "22/06/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000133"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000134": [
+   {
+    "id": "CJ3-2026-00134",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "07/11/1967"
+     ],
+     [
+      "NIN",
+      "99000000000000134"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000135": [
+   {
+    "id": "CJ3-2026-00135",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "20/04/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000135"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000136": [
+   {
+    "id": "CJ3-2026-00136",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "05/09/1980"
+     ],
+     [
+      "NIN",
+      "99000000000000136"
+     ],
+     [
+      "Mentions",
+      "Condamnation (2021)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000137": [
+   {
+    "id": "CJ3-2026-00137",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "18/02/1956"
+     ],
+     [
+      "NIN",
+      "99000000000000137"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000138": [
+   {
+    "id": "CJ3-2026-00138",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "03/07/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000138"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000139": [
+   {
+    "id": "CJ3-2026-00139",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "16/12/1969"
+     ],
+     [
+      "NIN",
+      "99000000000000139"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000140": [
+   {
+    "id": "CJ3-2026-00140",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "01/05/2006"
+     ],
+     [
+      "NIN",
+      "99000000000000140"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000141": [
+   {
+    "id": "CJ3-2026-00141",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "14/10/1982"
+     ],
+     [
+      "NIN",
+      "99000000000000141"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000142": [
+   {
+    "id": "CJ3-2026-00142",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "27/03/1958"
+     ],
+     [
+      "NIN",
+      "99000000000000142"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000143": [
+   {
+    "id": "CJ3-2026-00143",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "12/08/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000143"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000144": [
+   {
+    "id": "CJ3-2026-00144",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "25/01/1971"
+     ],
+     [
+      "NIN",
+      "99000000000000144"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000145": [
+   {
+    "id": "CJ3-2026-00145",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "10/06/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000145"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000146": [
+   {
+    "id": "CJ3-2026-00146",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "23/11/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000146"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000147": [
+   {
+    "id": "CJ3-2026-00147",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "08/04/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000147"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000148": [
+   {
+    "id": "CJ3-2026-00148",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "21/09/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000148"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000149": [
+   {
+    "id": "CJ3-2026-00149",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "06/02/1973"
+     ],
+     [
+      "NIN",
+      "99000000000000149"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000151": [
+   {
+    "id": "CJ3-2026-00151",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "04/12/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000151"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ],
+  "99000000000000152": [
+   {
+    "id": "CJ3-2026-00152",
+    "type": "casier_judiciaire",
+    "titre": "Extrait de casier judiciaire (bulletin n° 3)",
+    "date": "2026-11-01",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "17/05/1962"
+     ],
+     [
+      "NIN",
+      "99000000000000152"
+     ],
+     [
+      "Mentions",
+      "Néant"
+     ]
+    ]
+   }
+  ]
+ }
+}

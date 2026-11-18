@@ -1,0 +1,191 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Journal de traçabilité",
+    "description": "Journal unique, chaîné, en ajout seul, tenu par le serveur.",
+    "version": "2.0"
+  },
+  "paths": {
+    "/journal": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Lignes du journal visibles par la personne connectée",
+        "operationId": "lire_journal_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Ajouter une ligne (l'auteur est la personne connectée)",
+        "operationId": "ecrire_journal_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Entree"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/journal/verifier": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Vérifier l'intégrité de la chaîne et du sceau",
+        "operationId": "controler_journal_verifier_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/journal/demo/falsifier": {
+      "post": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Démonstration : modifier une ligne en base (super admin, désactivable)",
+        "description": "Modifie une ligne directement en base, comme le ferait un attaquant. Désactivée si SOCLE_DEMO=0.",
+        "operationId": "falsifier_journal_demo_falsifier_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "Session": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Jeton obtenu par /session/ouvrir (identifiant unique + code à usage unique)."
+      }
+    }
+  }
+}

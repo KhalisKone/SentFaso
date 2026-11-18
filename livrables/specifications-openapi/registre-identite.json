@@ -1,0 +1,561 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Registre d'identité simulé",
+    "description": "Vérification des identifiants uniques (NIN) : valide si le compte est actif. Nom et prénoms seulement.",
+    "version": "2.0"
+  },
+  "paths": {
+    "/sante": {
+      "get": {
+        "tags": [
+          "supervision"
+        ],
+        "summary": "État du registre (public)",
+        "operationId": "sante_sante_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/catalogue": {
+      "get": {
+        "tags": [
+          "contrat"
+        ],
+        "summary": "Pièces et réponses proposées, et services autorisés",
+        "operationId": "catalogue_catalogue_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "AppelSigne": []
+          }
+        ]
+      }
+    },
+    "/documents": {
+      "get": {
+        "tags": [
+          "contrat"
+        ],
+        "summary": "Pièces détenues sur une personne",
+        "operationId": "documents_documents_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "types",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Types"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "AppelSigne": []
+          }
+        ]
+      }
+    },
+    "/verifier": {
+      "get": {
+        "tags": [
+          "contrat"
+        ],
+        "summary": "Vérifier un identifiant unique (registre d'identité)",
+        "operationId": "verifier_verifier_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "AppelSigne": []
+          }
+        ]
+      }
+    },
+    "/predicat": {
+      "get": {
+        "tags": [
+          "contrat"
+        ],
+        "summary": "Réponse minimale oui/non (la donnée source n'est pas transmise)",
+        "operationId": "predicat_predicat_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Q"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "AppelSigne": []
+          }
+        ]
+      }
+    },
+    "/lien": {
+      "get": {
+        "tags": [
+          "contrat"
+        ],
+        "summary": "Lien court et signé vers le fichier d'une pièce",
+        "operationId": "lien_lien_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "document",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "AppelSigne": []
+          }
+        ]
+      }
+    },
+    "/fichiers/{document}": {
+      "get": {
+        "tags": [
+          "fichiers"
+        ],
+        "summary": "Fichier PDF d'une pièce (lien signé, durée limitée)",
+        "operationId": "fichier_fichiers__document__get",
+        "parameters": [
+          {
+            "name": "document",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document"
+            }
+          },
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "exp",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Exp"
+            }
+          },
+          {
+            "name": "sig",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Sig"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "AppelSigne": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Socle-Signature",
+        "description": "HMAC-SHA256(code secret, horodatage + \"\\n\" + \"GET\" + \"\\n\" + chemin?requête), avec X-Socle-Service et X-Socle-Horodatage. La réponse porte X-Registre-Horodatage et X-Registre-Signature = HMAC-SHA256(code secret, horodatage + \"\\n\" + chemin?requête + \"\\n\" + SHA-256(corps))."
+      }
+    }
+  }
+}

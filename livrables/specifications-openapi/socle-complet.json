@@ -1,0 +1,2270 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Socle « Dites-le-nous une fois »",
+    "description": "Socle d'interopérabilité entre administrations. Les pièces restent chez les registres ; la passerelle les interroge pour un dossier, avec authentification mutuelle (HMAC-SHA256 dans les deux sens), minimisation (types demandés, réponses oui/non), règles d'accès décidées par chaque registre, et journal chaîné tenu par le serveur.",
+    "version": "2.0"
+  },
+  "paths": {
+    "/session/code": {
+      "post": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Demander un code de connexion (SMS ; affiché à l'écran en démonstration)",
+        "description": "Réponse neutre : on ne révèle pas si l'identifiant existe. En démonstration, `code_demo` contient le code.",
+        "operationId": "demander_code_session_code_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DemandeCode"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/session/ouvrir": {
+      "post": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Ouvrir une session avec le code reçu",
+        "operationId": "ouvrir_session_ouvrir_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/session__Ouverture"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/session": {
+      "get": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Personne connectée et ses rôles",
+        "operationId": "moi_session_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/services/secret": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Créer un service et (re)générer son code secret (super admin)",
+        "description": "Crée le service s'il n'existe pas et génère (ou régénère) son code secret. Il n'est montré qu'une fois ;\nle service doit ensuite se (re)brancher.",
+        "operationId": "generer_secret_connect_services_secret_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ServiceIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/services/{service_id}/fiche": {
+      "put": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Modifier la fiche d'un service : nom, sigle, type, tutelle, ville (super admin)",
+        "description": "L'identifiant, le code secret et le branchement ne changent pas : le service reste branché.",
+        "operationId": "modifier_fiche_connect_services__service_id__fiche_put",
+        "parameters": [
+          {
+            "name": "service_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Service Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FicheService"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/services/{service_id}": {
+      "delete": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Supprimer un service (super admin)",
+        "description": "Retire le service et annule son code ; révoque ses admins et agents ; retire ses démarches.\nLes dossiers et le journal sont conservés. Refusé si des dossiers du service ne sont pas clôturés, ou si c'est le seul\nservice qui vérifie les codes uniques (plus personne ne pourrait se connecter).",
+        "operationId": "supprimer_service_connect_services__service_id__delete",
+        "parameters": [
+          {
+            "name": "service_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Service Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/services": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Annuaire public des registres",
+        "description": "Pour chaque service : branché ou non, pièces et réponses qu'il propose, services qu'il autorise.",
+        "operationId": "annuaire_connect_services_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/tester": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Tester une route d'un registre, sans rien enregistrer",
+        "operationId": "tester_connect_tester_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Test"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/session": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Ouvrir l'espace de branchement d'un service",
+        "operationId": "session_connect_session_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Identifiants"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/brancher": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Tester puis brancher un registre",
+        "operationId": "brancher_connect_brancher_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Branchement"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/catalogue/actualiser": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Relire le catalogue et les règles d'accès d'un registre",
+        "operationId": "actualiser_catalogue_connect_catalogue_actualiser_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Identifiants"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/conformite": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Banc de conformité : le registre vérifie lui-même qu'il respecte le contrat (avant ou après branchement)",
+        "description": "N'utilise que l'identifiant de test et un identifiant fictif ; tente aussi des appels que le registre DOIT refuser.",
+        "operationId": "banc_conformite_connect_conformite_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Banc"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/conformite/{service_id}": {
+      "post": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Repasser au banc un registre branché (super admin)",
+        "operationId": "banc_registre_branche_connect_conformite__service_id__post",
+        "parameters": [
+          {
+            "name": "service_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Service Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/sante": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Santé des registres branchés : répond, temps de réponse, signature (super admin)",
+        "operationId": "sante_des_registres_connect_sante_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/documents": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Pièces détenues sur une personne, auprès des registres utiles",
+        "description": "Interroge en parallèle les registres indiqués (`services`), pour les seuls types demandés (`types`)\net couverts par l'accord du dossier. Un registre dont les règles n'autorisent pas `demandeur` n'est pas appelé.",
+        "operationId": "documents_connect_documents_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "services",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Services"
+            }
+          },
+          {
+            "name": "types",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Types"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/predicat": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Réponse minimale oui/non (ex. majeur), sans transmettre la donnée source",
+        "operationId": "predicat_connect_predicat_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Q"
+            }
+          },
+          {
+            "name": "services",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Services"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/lien": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Lien court vers le fichier d'une pièce, redemandé au registre à chaque consultation",
+        "description": "Le fichier ne transite pas par la passerelle : le registre délivre un lien signé de courte durée,\nque le navigateur de l'agent ouvre directement chez lui. Chaque délivrance est journalisée.",
+        "operationId": "lien_connect_lien_get",
+        "parameters": [
+          {
+            "name": "service",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Service"
+            }
+          },
+          {
+            "name": "document",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Type"
+            }
+          },
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "finalite",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Finalite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/connect/verifier": {
+      "get": {
+        "tags": [
+          "passerelle"
+        ],
+        "summary": "Vérifier un identifiant unique auprès du registre d'identité (agents et administrateurs)",
+        "description": "Réservé aux personnes qui ont un rôle (vérification au guichet, nominations).",
+        "operationId": "verifier_connect_verifier_get",
+        "parameters": [
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Demandeur"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/accords": {
+      "post": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Créer l'accord d'un dossier (agent du service)",
+        "operationId": "creer_consentement_accords_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/consentement__api__Ouverture"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/accords/{dossier}": {
+      "get": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Lire un accord (citoyen concerné ou agent du service)",
+        "description": "Une tentative d'un agent d'un autre service est refusée et journalisée : le citoyen concerné la voit.",
+        "operationId": "lire_consentement_accords__dossier__get",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/accords/{dossier}/clore": {
+      "post": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "L'agent clôture : l'accord prend fin",
+        "operationId": "clore_consentement_accords__dossier__clore_post",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/controle": {
+      "get": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Vérifier qu'un échange est couvert par un accord (contrôle appliqué par la passerelle)",
+        "operationId": "verifier_echange_consentement_controle_get",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "codes",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Pièces ou réponses, séparées par des virgules",
+              "default": "",
+              "title": "Codes"
+            },
+            "description": "Pièces ou réponses, séparées par des virgules"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/journal": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Lignes du journal visibles par la personne connectée",
+        "operationId": "lire_journal_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Ajouter une ligne (l'auteur est la personne connectée)",
+        "operationId": "ecrire_journal_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Entree"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/journal/verifier": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Vérifier l'intégrité de la chaîne et du sceau",
+        "operationId": "controler_journal_verifier_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/journal/demo/falsifier": {
+      "post": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Démonstration : modifier une ligne en base (super admin, désactivable)",
+        "description": "Modifie une ligne directement en base, comme le ferait un attaquant. Désactivée si SOCLE_DEMO=0.",
+        "operationId": "falsifier_journal_demo_falsifier_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/etat": {
+      "get": {
+        "tags": [
+          "etat"
+        ],
+        "summary": "État visible par la personne connectée",
+        "operationId": "lire_etat_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "etat"
+        ],
+        "summary": "Enregistrer les modifications permises à la personne connectée",
+        "operationId": "ecrire_etat_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Etat"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/etat": {
+      "get": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "L'assistant est-il activé sur ce serveur ?",
+        "operationId": "etat_assistant_etat_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/competences": {
+      "get": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Compétences de l'assistant ouvertes à la personne connectée",
+        "operationId": "lister_competences_assistant_competences_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/conversations": {
+      "get": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Historique : conversations de la personne connectée",
+        "operationId": "conversations_assistant_conversations_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/conversations/{cid}": {
+      "get": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Fil d'une conversation",
+        "operationId": "conversation_assistant_conversations__cid__get",
+        "parameters": [
+          {
+            "name": "cid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Cid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Supprimer une conversation",
+        "operationId": "supprimer_assistant_conversations__cid__delete",
+        "parameters": [
+          {
+            "name": "cid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Cid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/message": {
+      "post": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Envoyer un message (personne connectée) ; la conversation est enregistrée",
+        "operationId": "message_assistant_message_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Message"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/assistant/public": {
+      "post": {
+        "tags": [
+          "assistant"
+        ],
+        "summary": "Question générale sans connexion (aucune compétence, rien n'est enregistré)",
+        "operationId": "public_assistant_public_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MessagePublic"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Accueil",
+        "operationId": "accueil__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Banc": {
+        "properties": {
+          "service_id": {
+            "type": "string",
+            "title": "Service Id"
+          },
+          "secret": {
+            "type": "string",
+            "title": "Secret"
+          },
+          "url_documents": {
+            "type": "string",
+            "title": "Url Documents"
+          },
+          "url_catalogue": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Catalogue"
+          },
+          "url_predicat": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Predicat"
+          },
+          "url_verifier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Verifier"
+          },
+          "adaptateur": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Adaptateur"
+          }
+        },
+        "type": "object",
+        "required": [
+          "service_id",
+          "secret",
+          "url_documents"
+        ],
+        "title": "Banc"
+      },
+      "Branchement": {
+        "properties": {
+          "service_id": {
+            "type": "string",
+            "title": "Service Id"
+          },
+          "secret": {
+            "type": "string",
+            "title": "Secret"
+          },
+          "url_documents": {
+            "type": "string",
+            "title": "Url Documents"
+          },
+          "url_verifier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Verifier"
+          },
+          "url_predicat": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Predicat"
+          },
+          "url_lien": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Lien"
+          },
+          "url_catalogue": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Catalogue"
+          },
+          "adaptateur": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Adaptateur"
+          },
+          "catalogue_declare": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Catalogue"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Déclaration manuelle, si le registre n'expose pas /catalogue."
+          }
+        },
+        "type": "object",
+        "required": [
+          "service_id",
+          "secret",
+          "url_documents"
+        ],
+        "title": "Branchement"
+      },
+      "Catalogue": {
+        "properties": {
+          "types": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Types",
+            "default": []
+          },
+          "predicats": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Predicats",
+            "default": []
+          }
+        },
+        "type": "object",
+        "title": "Catalogue"
+      },
+      "DemandeCode": {
+        "properties": {
+          "iu": {
+            "type": "string",
+            "title": "Iu",
+            "description": "Identifiant unique (NIN, 17 chiffres)."
+          }
+        },
+        "type": "object",
+        "required": [
+          "iu"
+        ],
+        "title": "DemandeCode"
+      },
+      "FicheService": {
+        "properties": {
+          "nom": {
+            "type": "string",
+            "title": "Nom"
+          },
+          "sigle": {
+            "type": "string",
+            "title": "Sigle",
+            "default": ""
+          },
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "default": ""
+          },
+          "tutelle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tutelle"
+          },
+          "ville": {
+            "type": "string",
+            "title": "Ville",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "nom"
+        ],
+        "title": "FicheService"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Identifiants": {
+        "properties": {
+          "service_id": {
+            "type": "string",
+            "title": "Service Id"
+          },
+          "secret": {
+            "type": "string",
+            "title": "Secret"
+          }
+        },
+        "type": "object",
+        "required": [
+          "service_id",
+          "secret"
+        ],
+        "title": "Identifiants"
+      },
+      "Message": {
+        "properties": {
+          "message": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Message"
+          },
+          "conversation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Conversation",
+            "description": "Identifiant d'une conversation existante (sinon : nouvelle)."
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page",
+            "description": "Page où se trouve la personne, pour adapter la réponse."
+          }
+        },
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "Message"
+      },
+      "MessagePublic": {
+        "properties": {
+          "message": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Message"
+          },
+          "historique": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Historique",
+            "description": "Derniers échanges [{role, texte}] (10 au plus)."
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          }
+        },
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "MessagePublic"
+      },
+      "ServiceIn": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "nom": {
+            "type": "string",
+            "title": "Nom"
+          },
+          "sigle": {
+            "type": "string",
+            "title": "Sigle",
+            "default": ""
+          },
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "default": ""
+          },
+          "tutelle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tutelle"
+          },
+          "ville": {
+            "type": "string",
+            "title": "Ville",
+            "default": ""
+          },
+          "double_api": {
+            "type": "boolean",
+            "title": "Double Api",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "nom"
+        ],
+        "title": "ServiceIn"
+      },
+      "Test": {
+        "properties": {
+          "service_id": {
+            "type": "string",
+            "title": "Service Id"
+          },
+          "secret": {
+            "type": "string",
+            "title": "Secret"
+          },
+          "quoi": {
+            "type": "string",
+            "title": "Quoi",
+            "description": "documents | verifier | predicat | catalogue | calcul"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "q": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Q",
+            "description": "Réponse à tester, pour quoi=predicat ou calcul (ex. majeur)."
+          },
+          "adaptateur": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Adaptateur"
+          },
+          "iu_essai": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Iu Essai",
+            "description": "Pour quoi=calcul : code unique d'une personne connue du registre."
+          }
+        },
+        "type": "object",
+        "required": [
+          "service_id",
+          "secret",
+          "quoi",
+          "url"
+        ],
+        "title": "Test"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "consentement__api__Ouverture": {
+        "properties": {
+          "dossier": {
+            "type": "string",
+            "title": "Dossier"
+          },
+          "iu": {
+            "type": "string",
+            "title": "Iu"
+          },
+          "service": {
+            "type": "string",
+            "title": "Service"
+          },
+          "finalite": {
+            "type": "string",
+            "title": "Finalite"
+          },
+          "base_legale": {
+            "type": "string",
+            "title": "Base Legale",
+            "default": ""
+          },
+          "pieces": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Pieces"
+          },
+          "duree": {
+            "type": "integer",
+            "title": "Duree",
+            "default": 30
+          }
+        },
+        "type": "object",
+        "required": [
+          "dossier",
+          "iu",
+          "service",
+          "finalite",
+          "pieces"
+        ],
+        "title": "Ouverture"
+      },
+      "session__Ouverture": {
+        "properties": {
+          "iu": {
+            "type": "string",
+            "title": "Iu",
+            "description": "Identifiant unique (NIN, 17 chiffres)."
+          },
+          "code": {
+            "type": "string",
+            "title": "Code"
+          }
+        },
+        "type": "object",
+        "required": [
+          "iu",
+          "code"
+        ],
+        "title": "Ouverture"
+      }
+    },
+    "securitySchemes": {
+      "Session": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Jeton obtenu par /session/ouvrir (identifiant unique + code à usage unique)."
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "session",
+      "description": "Connexion par identifiant unique et code à usage unique ; jeton de session."
+    },
+    {
+      "name": "passerelle",
+      "description": "Branchement des registres et échanges avec eux (/connect)."
+    },
+    {
+      "name": "consentement",
+      "description": "Accords par dossier, préférences du citoyen, contrôle avant échange."
+    },
+    {
+      "name": "journal",
+      "description": "Journal de traçabilité : ajout seul, chaîné par SHA-256, scellé."
+    },
+    {
+      "name": "etat",
+      "description": "État du socle filtré par rôle : services, rôles, démarches, dossiers."
+    },
+    {
+      "name": "assistant",
+      "description": "Assistant (Claude Haiku) : conversations, compétences exécutées avec les droits de la personne."
+    }
+  ]
+}

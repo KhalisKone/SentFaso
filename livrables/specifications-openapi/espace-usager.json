@@ -1,0 +1,288 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "API de l'espace usager",
+    "description": "Connexion par code à usage unique et état filtré par rôle.",
+    "version": "2.0"
+  },
+  "paths": {
+    "/session/code": {
+      "post": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Demander un code de connexion (SMS ; affiché à l'écran en démonstration)",
+        "description": "Réponse neutre : on ne révèle pas si l'identifiant existe. En démonstration, `code_demo` contient le code.",
+        "operationId": "demander_code_session_code_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DemandeCode"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/session/ouvrir": {
+      "post": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Ouvrir une session avec le code reçu",
+        "operationId": "ouvrir_session_ouvrir_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ouverture"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/session": {
+      "get": {
+        "tags": [
+          "session"
+        ],
+        "summary": "Personne connectée et ses rôles",
+        "operationId": "moi_session_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/etat": {
+      "get": {
+        "tags": [
+          "etat"
+        ],
+        "summary": "État visible par la personne connectée",
+        "operationId": "lire_etat_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "etat"
+        ],
+        "summary": "Enregistrer les modifications permises à la personne connectée",
+        "operationId": "ecrire_etat_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Etat"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DemandeCode": {
+        "properties": {
+          "iu": {
+            "type": "string",
+            "title": "Iu",
+            "description": "Identifiant unique (NIN, 17 chiffres)."
+          }
+        },
+        "type": "object",
+        "required": [
+          "iu"
+        ],
+        "title": "DemandeCode"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Ouverture": {
+        "properties": {
+          "iu": {
+            "type": "string",
+            "title": "Iu",
+            "description": "Identifiant unique (NIN, 17 chiffres)."
+          },
+          "code": {
+            "type": "string",
+            "title": "Code"
+          }
+        },
+        "type": "object",
+        "required": [
+          "iu",
+          "code"
+        ],
+        "title": "Ouverture"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "Session": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Jeton obtenu par /session/ouvrir (identifiant unique + code à usage unique)."
+      }
+    }
+  }
+}

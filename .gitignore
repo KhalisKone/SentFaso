@@ -1,0 +1,28 @@
+# ── Secrets : jamais dans le dépôt (modèle à remplir : backend/.env.exemple) ──
+.env
+*.env
+backend/secrets/
+# Données réelles reçues du ministère (échantillon) : jamais publiées
+nin-ministere-150.pdf
+# Base locale (mode sqlite) et copies de sécurité
+backend/donnees/
+*.db
+*.db-wal
+*.db-shm
+sauvegarde*.json
+# Documents internes à l'équipe et au serveur d'hébergement
+serveur/
+partage/
+# Environnements et fichiers construits
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+espace-usager/dist/
+# Vidéo de démonstration, fichiers pour la refaire, et PDF (remis avec les livrables, pas dans le dépôt ;
+# les PDF se régénèrent : python3 outils/md_vers_pdf.py livrables/*.md)
+livrables/video-demonstration.mp4
+livrables/*.pdf
+outils/video/
+outils/video_demo.py
+outils/script-video.md

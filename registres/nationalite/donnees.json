@@ -1,0 +1,5092 @@
+{
+ "personnes": {
+  "99000000000000001": {
+   "nom": "KABORE",
+   "prenoms": "Aminata"
+  },
+  "99000000000000002": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Issouf"
+  },
+  "99000000000000003": {
+   "nom": "KABORE",
+   "prenoms": "Aminata"
+  },
+  "99000000000000004": {
+   "nom": "COMPAORE",
+   "prenoms": "Salif"
+  },
+  "99000000000000005": {
+   "nom": "ZONGO",
+   "prenoms": "Mariam"
+  },
+  "99000000000000006": {
+   "nom": "TRAORE",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000007": {
+   "nom": "OUATTARA",
+   "prenoms": "Drissa"
+  },
+  "99000000000000008": {
+   "nom": "OUATTARA",
+   "prenoms": "Awa"
+  },
+  "99000000000000009": {
+   "nom": "SANOU",
+   "prenoms": "Jean-Baptiste"
+  },
+  "99000000000000010": {
+   "nom": "ILBOUDO",
+   "prenoms": "Rasmané"
+  },
+  "99000000000000011": {
+   "nom": "KONATE",
+   "prenoms": "Adama"
+  },
+  "99000000000000012": {
+   "nom": "SOME",
+   "prenoms": "Edwige"
+  },
+  "99000000000000013": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Hamidou"
+  },
+  "99000000000000014": {
+   "nom": "NIKIEMA",
+   "prenoms": "Pascal"
+  },
+  "99000000000000015": {
+   "nom": "YAMEOGO",
+   "prenoms": "Clarisse"
+  },
+  "99000000000000016": {
+   "nom": "KABRE",
+   "prenoms": "Désiré"
+  },
+  "99000000000000017": {
+   "nom": "DIALLO",
+   "prenoms": "Aïssata"
+  },
+  "99000000000000018": {
+   "nom": "BARRY",
+   "prenoms": "Oumar"
+  },
+  "99000000000000019": {
+   "nom": "KAFANDO",
+   "prenoms": "Rosalie"
+  },
+  "99000000000000021": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Sylvie"
+  },
+  "99000000000000022": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Arouna"
+  },
+  "99000000000000023": {
+   "nom": "ROAMBA",
+   "prenoms": "Nafissatou"
+  },
+  "99000000000000024": {
+   "nom": "BAMBARA",
+   "prenoms": "Seydou"
+  },
+  "99000000000000025": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Rasmata"
+  },
+  "99000000000000026": {
+   "nom": "NACANABO",
+   "prenoms": "Pauline"
+  },
+  "99000000000000027": {
+   "nom": "GUIRO",
+   "prenoms": "Moussa"
+  },
+  "99000000000000028": {
+   "nom": "SORE",
+   "prenoms": "Henriette"
+  },
+  "99000000000000029": {
+   "nom": "ZERBO",
+   "prenoms": "Abdoulaye"
+  },
+  "99000000000000030": {
+   "nom": "DABIRE",
+   "prenoms": "Christine"
+  },
+  "99000000000000033": {
+   "nom": "ROUAMBA",
+   "prenoms": "Issaka"
+  },
+  "99000000000000034": {
+   "nom": "SAWADOGO",
+   "prenoms": "Assèta"
+  },
+  "99000000000000035": {
+   "nom": "OUATTARA",
+   "prenoms": "Hamado"
+  },
+  "99000000000000036": {
+   "nom": "TAPSOBA",
+   "prenoms": "Alimata"
+  },
+  "99000000000000037": {
+   "nom": "KINDA",
+   "prenoms": "Tasséré"
+  },
+  "99000000000000038": {
+   "nom": "NACOULMA",
+   "prenoms": "Habibou"
+  },
+  "99000000000000039": {
+   "nom": "ZONGO",
+   "prenoms": "Arouna"
+  },
+  "99000000000000041": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Daouda"
+  },
+  "99000000000000042": {
+   "nom": "GUIRA",
+   "prenoms": "Pauline"
+  },
+  "99000000000000043": {
+   "nom": "KABORE",
+   "prenoms": "Seydou"
+  },
+  "99000000000000044": {
+   "nom": "DIALLO",
+   "prenoms": "Salamata"
+  },
+  "99000000000000045": {
+   "nom": "SOME",
+   "prenoms": "Salif"
+  },
+  "99000000000000046": {
+   "nom": "SIMPORE",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000047": {
+   "nom": "BARRY",
+   "prenoms": "Moussa"
+  },
+  "99000000000000048": {
+   "nom": "SANOU",
+   "prenoms": "Aminata"
+  },
+  "99000000000000049": {
+   "nom": "YAMEOGO",
+   "prenoms": "Bernard"
+  },
+  "99000000000000050": {
+   "nom": "BAGRE",
+   "prenoms": "Adjaratou"
+  },
+  "99000000000000051": {
+   "nom": "PODA",
+   "prenoms": "Karim"
+  },
+  "99000000000000052": {
+   "nom": "TRAORE",
+   "prenoms": "Nafissatou"
+  },
+  "99000000000000053": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Joseph"
+  },
+  "99000000000000054": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Rosalie"
+  },
+  "99000000000000055": {
+   "nom": "CONGO",
+   "prenoms": "Mahamadi"
+  },
+  "99000000000000056": {
+   "nom": "COMPAORE",
+   "prenoms": "Christine"
+  },
+  "99000000000000057": {
+   "nom": "ILBOUDO",
+   "prenoms": "Issaka"
+  },
+  "99000000000000058": {
+   "nom": "DABIRE",
+   "prenoms": "Assèta"
+  },
+  "99000000000000059": {
+   "nom": "KAFANDO",
+   "prenoms": "Hamado"
+  },
+  "99000000000000061": {
+   "nom": "KONATE",
+   "prenoms": "Tasséré"
+  },
+  "99000000000000062": {
+   "nom": "KAMBOU",
+   "prenoms": "Habibou"
+  },
+  "99000000000000063": {
+   "nom": "ROUAMBA",
+   "prenoms": "Arouna"
+  },
+  "99000000000000064": {
+   "nom": "SAWADOGO",
+   "prenoms": "Germaine"
+  },
+  "99000000000000065": {
+   "nom": "OUATTARA",
+   "prenoms": "Daouda"
+  },
+  "99000000000000066": {
+   "nom": "TAPSOBA",
+   "prenoms": "Pauline"
+  },
+  "99000000000000067": {
+   "nom": "KINDA",
+   "prenoms": "Seydou"
+  },
+  "99000000000000068": {
+   "nom": "NACOULMA",
+   "prenoms": "Salamata"
+  },
+  "99000000000000069": {
+   "nom": "ZONGO",
+   "prenoms": "Salif"
+  },
+  "99000000000000070": {
+   "nom": "NIKIEMA",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000071": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Moussa"
+  },
+  "99000000000000072": {
+   "nom": "GUIRA",
+   "prenoms": "Aminata"
+  },
+  "99000000000000073": {
+   "nom": "KABORE",
+   "prenoms": "Bernard"
+  },
+  "99000000000000074": {
+   "nom": "DIALLO",
+   "prenoms": "Adjaratou"
+  },
+  "99000000000000075": {
+   "nom": "SOME",
+   "prenoms": "Karim"
+  },
+  "99000000000000076": {
+   "nom": "SIMPORE",
+   "prenoms": "Nafissatou"
+  },
+  "99000000000000077": {
+   "nom": "BARRY",
+   "prenoms": "Joseph"
+  },
+  "99000000000000078": {
+   "nom": "SANOU",
+   "prenoms": "Rosalie"
+  },
+  "99000000000000079": {
+   "nom": "YAMEOGO",
+   "prenoms": "Mahamadi"
+  },
+  "99000000000000081": {
+   "nom": "PODA",
+   "prenoms": "Issaka"
+  },
+  "99000000000000082": {
+   "nom": "TRAORE",
+   "prenoms": "Assèta"
+  },
+  "99000000000000083": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Hamado"
+  },
+  "99000000000000084": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Alimata"
+  },
+  "99000000000000085": {
+   "nom": "CONGO",
+   "prenoms": "Tasséré"
+  },
+  "99000000000000086": {
+   "nom": "COMPAORE",
+   "prenoms": "Habibou"
+  },
+  "99000000000000087": {
+   "nom": "ILBOUDO",
+   "prenoms": "Arouna"
+  },
+  "99000000000000088": {
+   "nom": "DABIRE",
+   "prenoms": "Germaine"
+  },
+  "99000000000000089": {
+   "nom": "KAFANDO",
+   "prenoms": "Daouda"
+  },
+  "99000000000000090": {
+   "nom": "OUEDRAOGO",
+   "prenoms": "Pauline"
+  },
+  "99000000000000091": {
+   "nom": "KONATE",
+   "prenoms": "Seydou"
+  },
+  "99000000000000092": {
+   "nom": "KAMBOU",
+   "prenoms": "Salamata"
+  },
+  "99000000000000093": {
+   "nom": "ROUAMBA",
+   "prenoms": "Salif"
+  },
+  "99000000000000094": {
+   "nom": "SAWADOGO",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000095": {
+   "nom": "OUATTARA",
+   "prenoms": "Moussa"
+  },
+  "99000000000000096": {
+   "nom": "TAPSOBA",
+   "prenoms": "Aminata"
+  },
+  "99000000000000097": {
+   "nom": "KINDA",
+   "prenoms": "Bernard"
+  },
+  "99000000000000098": {
+   "nom": "NACOULMA",
+   "prenoms": "Adjaratou"
+  },
+  "99000000000000099": {
+   "nom": "ZONGO",
+   "prenoms": "Karim"
+  },
+  "99000000000000101": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Joseph"
+  },
+  "99000000000000102": {
+   "nom": "GUIRA",
+   "prenoms": "Rosalie"
+  },
+  "99000000000000103": {
+   "nom": "KABORE",
+   "prenoms": "Mahamadi"
+  },
+  "99000000000000104": {
+   "nom": "DIALLO",
+   "prenoms": "Christine"
+  },
+  "99000000000000105": {
+   "nom": "SOME",
+   "prenoms": "Issaka"
+  },
+  "99000000000000106": {
+   "nom": "SIMPORE",
+   "prenoms": "Assèta"
+  },
+  "99000000000000107": {
+   "nom": "BARRY",
+   "prenoms": "Hamado"
+  },
+  "99000000000000108": {
+   "nom": "SANOU",
+   "prenoms": "Alimata"
+  },
+  "99000000000000109": {
+   "nom": "YAMEOGO",
+   "prenoms": "Tasséré"
+  },
+  "99000000000000110": {
+   "nom": "BAGRE",
+   "prenoms": "Habibou"
+  },
+  "99000000000000111": {
+   "nom": "PODA",
+   "prenoms": "Arouna"
+  },
+  "99000000000000112": {
+   "nom": "TRAORE",
+   "prenoms": "Germaine"
+  },
+  "99000000000000113": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Daouda"
+  },
+  "99000000000000114": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Pauline"
+  },
+  "99000000000000115": {
+   "nom": "CONGO",
+   "prenoms": "Seydou"
+  },
+  "99000000000000116": {
+   "nom": "COMPAORE",
+   "prenoms": "Salamata"
+  },
+  "99000000000000117": {
+   "nom": "ILBOUDO",
+   "prenoms": "Salif"
+  },
+  "99000000000000118": {
+   "nom": "DABIRE",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000119": {
+   "nom": "KAFANDO",
+   "prenoms": "Moussa"
+  },
+  "99000000000000121": {
+   "nom": "KONATE",
+   "prenoms": "Bernard"
+  },
+  "99000000000000122": {
+   "nom": "KAMBOU",
+   "prenoms": "Adjaratou"
+  },
+  "99000000000000123": {
+   "nom": "ROUAMBA",
+   "prenoms": "Karim"
+  },
+  "99000000000000124": {
+   "nom": "SAWADOGO",
+   "prenoms": "Nafissatou"
+  },
+  "99000000000000125": {
+   "nom": "OUATTARA",
+   "prenoms": "Joseph"
+  },
+  "99000000000000126": {
+   "nom": "TAPSOBA",
+   "prenoms": "Rosalie"
+  },
+  "99000000000000127": {
+   "nom": "KINDA",
+   "prenoms": "Mahamadi"
+  },
+  "99000000000000128": {
+   "nom": "NACOULMA",
+   "prenoms": "Christine"
+  },
+  "99000000000000129": {
+   "nom": "ZONGO",
+   "prenoms": "Issaka"
+  },
+  "99000000000000130": {
+   "nom": "NIKIEMA",
+   "prenoms": "Assèta"
+  },
+  "99000000000000131": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Hamado"
+  },
+  "99000000000000132": {
+   "nom": "GUIRA",
+   "prenoms": "Alimata"
+  },
+  "99000000000000133": {
+   "nom": "KONATE",
+   "prenoms": "Joseph"
+  },
+  "99000000000000134": {
+   "nom": "BONKOUNGOU",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000135": {
+   "nom": "KABORE",
+   "prenoms": "Karim"
+  },
+  "99000000000000136": {
+   "nom": "TAPSOBA",
+   "prenoms": "Salamata"
+  },
+  "99000000000000137": {
+   "nom": "KAFANDO",
+   "prenoms": "Bernard"
+  },
+  "99000000000000138": {
+   "nom": "SANOU",
+   "prenoms": "Pauline"
+  },
+  "99000000000000139": {
+   "nom": "KIENDREBEOGO",
+   "prenoms": "Hamado"
+  },
+  "99000000000000141": {
+   "nom": "ZOUNGRANA",
+   "prenoms": "Issaka"
+  },
+  "99000000000000142": {
+   "nom": "SIMPORE",
+   "prenoms": "Habibou"
+  },
+  "99000000000000143": {
+   "nom": "OUATTARA",
+   "prenoms": "Mahamadi"
+  },
+  "99000000000000144": {
+   "nom": "DABIRE",
+   "prenoms": "Aminata"
+  },
+  "99000000000000145": {
+   "nom": "PODA",
+   "prenoms": "Joseph"
+  },
+  "99000000000000146": {
+   "nom": "NIKIEMA",
+   "prenoms": "Fatimata"
+  },
+  "99000000000000147": {
+   "nom": "ROUAMBA",
+   "prenoms": "Karim"
+  },
+  "99000000000000148": {
+   "nom": "TRAORE",
+   "prenoms": "Salamata"
+  },
+  "99000000000000149": {
+   "nom": "SOME",
+   "prenoms": "Bernard"
+  },
+  "99000000000000150": {
+   "nom": "NACOULMA",
+   "prenoms": "Pauline"
+  },
+  "99000000000000151": {
+   "nom": "ILBOUDO",
+   "prenoms": "Hamado"
+  },
+  "99000000000000152": {
+   "nom": "BAGRE",
+   "prenoms": "Germaine"
+  }
+ },
+ "documents": {
+  "99000000000000001": [
+   {
+    "id": "CN-2024-00001",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "14/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000001"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000002": [
+   {
+    "id": "CN-2024-00002",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Issouf"
+     ],
+     [
+      "Né(e) le",
+      "02/06/2010"
+     ],
+     [
+      "NIN",
+      "99000000000000002"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000003": [
+   {
+    "id": "CN-2024-00003",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "14/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000003"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000004": [
+   {
+    "id": "CN-2024-00004",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "30/11/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000004"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000005": [
+   {
+    "id": "CN-2024-00005",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Mariam"
+     ],
+     [
+      "Né(e) le",
+      "16/11/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000005"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000006": [
+   {
+    "id": "CN-2024-00006",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "17/11/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000006"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000007": [
+   {
+    "id": "CN-2024-00007",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Drissa"
+     ],
+     [
+      "Né(e) le",
+      "08/01/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000007"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000008": [
+   {
+    "id": "CN-2024-00008",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Awa"
+     ],
+     [
+      "Né(e) le",
+      "22/04/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000008"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000009": [
+   {
+    "id": "CN-2024-00009",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Jean-Baptiste"
+     ],
+     [
+      "Né(e) le",
+      "15/08/1990"
+     ],
+     [
+      "NIN",
+      "99000000000000009"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000010": [
+   {
+    "id": "CN-2024-00010",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Rasmané"
+     ],
+     [
+      "Né(e) le",
+      "20/02/1975"
+     ],
+     [
+      "NIN",
+      "99000000000000010"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00010",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1975-02-20",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Rasmané"
+     ],
+     [
+      "Né(e) le",
+      "20/02/1975"
+     ],
+     [
+      "NIN",
+      "99000000000000010"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000011": [
+   {
+    "id": "CN-2024-00011",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Adama"
+     ],
+     [
+      "Né(e) le",
+      "11/07/1982"
+     ],
+     [
+      "NIN",
+      "99000000000000011"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000012": [
+   {
+    "id": "CN-2024-00012",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Edwige"
+     ],
+     [
+      "Né(e) le",
+      "03/12/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000012"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000013": [
+   {
+    "id": "CN-2024-00013",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Hamidou"
+     ],
+     [
+      "Né(e) le",
+      "27/05/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000013"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000014": [
+   {
+    "id": "CN-2024-00014",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Pascal"
+     ],
+     [
+      "Né(e) le",
+      "09/09/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000014"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000015": [
+   {
+    "id": "CN-2024-00015",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Clarisse"
+     ],
+     [
+      "Né(e) le",
+      "18/03/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000015"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000016": [
+   {
+    "id": "CN-2024-00016",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABRE"
+     ],
+     [
+      "Prénoms",
+      "Désiré"
+     ],
+     [
+      "Né(e) le",
+      "01/10/1999"
+     ],
+     [
+      "NIN",
+      "99000000000000016"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000017": [
+   {
+    "id": "CN-2024-00017",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Aïssata"
+     ],
+     [
+      "Né(e) le",
+      "25/01/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000017"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000018": [
+   {
+    "id": "CN-2024-00018",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Oumar"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000018"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000019": [
+   {
+    "id": "CN-2024-00019",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "07/07/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000019"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000021": [
+   {
+    "id": "CN-2024-00021",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Sylvie"
+     ],
+     [
+      "Né(e) le",
+      "29/02/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000021"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000022": [
+   {
+    "id": "CN-2024-00022",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "19/06/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000022"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000023": [
+   {
+    "id": "CN-2024-00023",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROAMBA"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "30/09/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000023"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000024": [
+   {
+    "id": "CN-2024-00024",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BAMBARA"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "05/12/2009"
+     ],
+     [
+      "NIN",
+      "99000000000000024"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000025": [
+   {
+    "id": "CN-2024-00025",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Rasmata"
+     ],
+     [
+      "Né(e) le",
+      "14/02/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000025"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000026": [
+   {
+    "id": "CN-2024-00026",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACANABO"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "08/03/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000026"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000027": [
+   {
+    "id": "CN-2024-00027",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "GUIRO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "17/01/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000027"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000028": [
+   {
+    "id": "CN-2024-00028",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SORE"
+     ],
+     [
+      "Prénoms",
+      "Henriette"
+     ],
+     [
+      "Né(e) le",
+      "23/05/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000028"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000029": [
+   {
+    "id": "CN-2024-00029",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZERBO"
+     ],
+     [
+      "Prénoms",
+      "Abdoulaye"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000029"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000030": [
+   {
+    "id": "CN-2024-00030",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "10/10/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000030"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00030",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1992-10-10",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "10/10/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000030"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000033": [
+   {
+    "id": "CN-2024-00033",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "10/10/1951"
+     ],
+     [
+      "NIN",
+      "99000000000000033"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000034": [
+   {
+    "id": "CN-2024-00034",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "23/03/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000034"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000035": [
+   {
+    "id": "CN-2024-00035",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1964"
+     ],
+     [
+      "NIN",
+      "99000000000000035"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000036": [
+   {
+    "id": "CN-2024-00036",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "21/01/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000036"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000037": [
+   {
+    "id": "CN-2024-00037",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "06/06/1977"
+     ],
+     [
+      "NIN",
+      "99000000000000037"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000038": [
+   {
+    "id": "CN-2024-00038",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "19/11/1953"
+     ],
+     [
+      "NIN",
+      "99000000000000038"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000039": [
+   {
+    "id": "CN-2024-00039",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1990"
+     ],
+     [
+      "NIN",
+      "99000000000000039"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000041": [
+   {
+    "id": "CN-2024-00041",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "02/02/2003"
+     ],
+     [
+      "NIN",
+      "99000000000000041"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000042": [
+   {
+    "id": "CN-2024-00042",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "15/07/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000042"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000043": [
+   {
+    "id": "CN-2024-00043",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "28/12/1955"
+     ],
+     [
+      "NIN",
+      "99000000000000043"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000044": [
+   {
+    "id": "CN-2024-00044",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "13/05/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000044"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000045": [
+   {
+    "id": "CN-2024-00045",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "26/10/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000045"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000046": [
+   {
+    "id": "CN-2024-00046",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "11/03/2005"
+     ],
+     [
+      "NIN",
+      "99000000000000046"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000047": [
+   {
+    "id": "CN-2024-00047",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "24/08/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000047"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000048": [
+   {
+    "id": "CN-2024-00048",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "09/01/1957"
+     ],
+     [
+      "NIN",
+      "99000000000000048"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000049": [
+   {
+    "id": "CN-2024-00049",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "22/06/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000049"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000050": [
+   {
+    "id": "CN-2024-00050",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "07/11/1970"
+     ],
+     [
+      "NIN",
+      "99000000000000050"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00050",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1970-11-07",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "07/11/1970"
+     ],
+     [
+      "NIN",
+      "99000000000000050"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000051": [
+   {
+    "id": "CN-2024-00051",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "20/04/2007"
+     ],
+     [
+      "NIN",
+      "99000000000000051"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000052": [
+   {
+    "id": "CN-2024-00052",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "05/09/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000052"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000053": [
+   {
+    "id": "CN-2024-00053",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "18/02/1959"
+     ],
+     [
+      "NIN",
+      "99000000000000053"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000054": [
+   {
+    "id": "CN-2024-00054",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "03/07/1996"
+     ],
+     [
+      "NIN",
+      "99000000000000054"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000055": [
+   {
+    "id": "CN-2024-00055",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "16/12/1972"
+     ],
+     [
+      "NIN",
+      "99000000000000055"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000056": [
+   {
+    "id": "CN-2024-00056",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "01/05/2009"
+     ],
+     [
+      "NIN",
+      "99000000000000056"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000057": [
+   {
+    "id": "CN-2024-00057",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "14/10/1985"
+     ],
+     [
+      "NIN",
+      "99000000000000057"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000058": [
+   {
+    "id": "CN-2024-00058",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "27/03/1961"
+     ],
+     [
+      "NIN",
+      "99000000000000058"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000059": [
+   {
+    "id": "CN-2024-00059",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "12/08/1998"
+     ],
+     [
+      "NIN",
+      "99000000000000059"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000061": [
+   {
+    "id": "CN-2024-00061",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "10/06/1950"
+     ],
+     [
+      "NIN",
+      "99000000000000061"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000062": [
+   {
+    "id": "CN-2024-00062",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "23/11/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000062"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000063": [
+   {
+    "id": "CN-2024-00063",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "08/04/1963"
+     ],
+     [
+      "NIN",
+      "99000000000000063"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000064": [
+   {
+    "id": "CN-2024-00064",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "21/09/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000064"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000065": [
+   {
+    "id": "CN-2024-00065",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "06/02/1976"
+     ],
+     [
+      "NIN",
+      "99000000000000065"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000066": [
+   {
+    "id": "CN-2024-00066",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "19/07/1952"
+     ],
+     [
+      "NIN",
+      "99000000000000066"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000067": [
+   {
+    "id": "CN-2024-00067",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "04/12/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000067"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000068": [
+   {
+    "id": "CN-2024-00068",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "17/05/1965"
+     ],
+     [
+      "NIN",
+      "99000000000000068"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000069": [
+   {
+    "id": "CN-2024-00069",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "02/10/2002"
+     ],
+     [
+      "NIN",
+      "99000000000000069"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000070": [
+   {
+    "id": "CN-2024-00070",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "15/03/1978"
+     ],
+     [
+      "NIN",
+      "99000000000000070"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00070",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1978-03-15",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "15/03/1978"
+     ],
+     [
+      "NIN",
+      "99000000000000070"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000071": [
+   {
+    "id": "CN-2024-00071",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "28/08/1954"
+     ],
+     [
+      "NIN",
+      "99000000000000071"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000072": [
+   {
+    "id": "CN-2024-00072",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "13/01/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000072"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000073": [
+   {
+    "id": "CN-2024-00073",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "26/06/1967"
+     ],
+     [
+      "NIN",
+      "99000000000000073"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000074": [
+   {
+    "id": "CN-2024-00074",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "11/11/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000074"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000075": [
+   {
+    "id": "CN-2024-00075",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "24/04/1980"
+     ],
+     [
+      "NIN",
+      "99000000000000075"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000076": [
+   {
+    "id": "CN-2024-00076",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "09/09/1956"
+     ],
+     [
+      "NIN",
+      "99000000000000076"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000077": [
+   {
+    "id": "CN-2024-00077",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "22/02/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000077"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000078": [
+   {
+    "id": "CN-2024-00078",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "07/07/1969"
+     ],
+     [
+      "NIN",
+      "99000000000000078"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000079": [
+   {
+    "id": "CN-2024-00079",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "20/12/2006"
+     ],
+     [
+      "NIN",
+      "99000000000000079"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000081": [
+   {
+    "id": "CN-2024-00081",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "18/10/1958"
+     ],
+     [
+      "NIN",
+      "99000000000000081"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000082": [
+   {
+    "id": "CN-2024-00082",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "03/03/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000082"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000083": [
+   {
+    "id": "CN-2024-00083",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "16/08/1971"
+     ],
+     [
+      "NIN",
+      "99000000000000083"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000084": [
+   {
+    "id": "CN-2024-00084",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "01/01/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000084"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000085": [
+   {
+    "id": "CN-2024-00085",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "14/06/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000085"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000086": [
+   {
+    "id": "CN-2024-00086",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "27/11/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000086"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000087": [
+   {
+    "id": "CN-2024-00087",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "12/04/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000087"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000088": [
+   {
+    "id": "CN-2024-00088",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "25/09/1973"
+     ],
+     [
+      "NIN",
+      "99000000000000088"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000089": [
+   {
+    "id": "CN-2024-00089",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "10/02/2010"
+     ],
+     [
+      "NIN",
+      "99000000000000089"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000090": [
+   {
+    "id": "CN-2024-00090",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "23/07/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000090"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00090",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1986-07-23",
+    "champs": [
+     [
+      "Nom",
+      "OUEDRAOGO"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "23/07/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000090"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000091": [
+   {
+    "id": "CN-2024-00091",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "08/12/1962"
+     ],
+     [
+      "NIN",
+      "99000000000000091"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000092": [
+   {
+    "id": "CN-2024-00092",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "21/05/1999"
+     ],
+     [
+      "NIN",
+      "99000000000000092"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000093": [
+   {
+    "id": "CN-2024-00093",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "06/10/1975"
+     ],
+     [
+      "NIN",
+      "99000000000000093"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000094": [
+   {
+    "id": "CN-2024-00094",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "19/03/1951"
+     ],
+     [
+      "NIN",
+      "99000000000000094"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000095": [
+   {
+    "id": "CN-2024-00095",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "04/08/1988"
+     ],
+     [
+      "NIN",
+      "99000000000000095"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000096": [
+   {
+    "id": "CN-2024-00096",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "17/01/1964"
+     ],
+     [
+      "NIN",
+      "99000000000000096"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000097": [
+   {
+    "id": "CN-2024-00097",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "02/06/2001"
+     ],
+     [
+      "NIN",
+      "99000000000000097"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000098": [
+   {
+    "id": "CN-2024-00098",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "15/11/1977"
+     ],
+     [
+      "NIN",
+      "99000000000000098"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000099": [
+   {
+    "id": "CN-2024-00099",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "28/04/1953"
+     ],
+     [
+      "NIN",
+      "99000000000000099"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000101": [
+   {
+    "id": "CN-2024-00101",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "26/02/1966"
+     ],
+     [
+      "NIN",
+      "99000000000000101"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000102": [
+   {
+    "id": "CN-2024-00102",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "11/07/2003"
+     ],
+     [
+      "NIN",
+      "99000000000000102"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000103": [
+   {
+    "id": "CN-2024-00103",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "24/12/1979"
+     ],
+     [
+      "NIN",
+      "99000000000000103"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000104": [
+   {
+    "id": "CN-2024-00104",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DIALLO"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "09/05/1955"
+     ],
+     [
+      "NIN",
+      "99000000000000104"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000105": [
+   {
+    "id": "CN-2024-00105",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "22/10/1992"
+     ],
+     [
+      "NIN",
+      "99000000000000105"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000106": [
+   {
+    "id": "CN-2024-00106",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "07/03/1968"
+     ],
+     [
+      "NIN",
+      "99000000000000106"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000107": [
+   {
+    "id": "CN-2024-00107",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BARRY"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "20/08/2005"
+     ],
+     [
+      "NIN",
+      "99000000000000107"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000108": [
+   {
+    "id": "CN-2024-00108",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "05/01/1981"
+     ],
+     [
+      "NIN",
+      "99000000000000108"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000109": [
+   {
+    "id": "CN-2024-00109",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "YAMEOGO"
+     ],
+     [
+      "Prénoms",
+      "Tasséré"
+     ],
+     [
+      "Né(e) le",
+      "18/06/1957"
+     ],
+     [
+      "NIN",
+      "99000000000000109"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000110": [
+   {
+    "id": "CN-2024-00110",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "03/11/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000110"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00110",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "1994-11-03",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "03/11/1994"
+     ],
+     [
+      "NIN",
+      "99000000000000110"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000111": [
+   {
+    "id": "CN-2024-00111",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Arouna"
+     ],
+     [
+      "Né(e) le",
+      "16/04/1970"
+     ],
+     [
+      "NIN",
+      "99000000000000111"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000112": [
+   {
+    "id": "CN-2024-00112",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "01/09/2007"
+     ],
+     [
+      "NIN",
+      "99000000000000112"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000113": [
+   {
+    "id": "CN-2024-00113",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Daouda"
+     ],
+     [
+      "Né(e) le",
+      "14/02/1983"
+     ],
+     [
+      "NIN",
+      "99000000000000113"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000114": [
+   {
+    "id": "CN-2024-00114",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "27/07/1959"
+     ],
+     [
+      "NIN",
+      "99000000000000114"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000115": [
+   {
+    "id": "CN-2024-00115",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "CONGO"
+     ],
+     [
+      "Prénoms",
+      "Seydou"
+     ],
+     [
+      "Né(e) le",
+      "12/12/1996"
+     ],
+     [
+      "NIN",
+      "99000000000000115"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000116": [
+   {
+    "id": "CN-2024-00116",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "COMPAORE"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "25/05/1972"
+     ],
+     [
+      "NIN",
+      "99000000000000116"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000117": [
+   {
+    "id": "CN-2024-00117",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Salif"
+     ],
+     [
+      "Né(e) le",
+      "10/10/2009"
+     ],
+     [
+      "NIN",
+      "99000000000000117"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000118": [
+   {
+    "id": "CN-2024-00118",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "23/03/1985"
+     ],
+     [
+      "NIN",
+      "99000000000000118"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000119": [
+   {
+    "id": "CN-2024-00119",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Moussa"
+     ],
+     [
+      "Né(e) le",
+      "08/08/1961"
+     ],
+     [
+      "NIN",
+      "99000000000000119"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000121": [
+   {
+    "id": "CN-2024-00121",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "06/06/1974"
+     ],
+     [
+      "NIN",
+      "99000000000000121"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000122": [
+   {
+    "id": "CN-2024-00122",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAMBOU"
+     ],
+     [
+      "Prénoms",
+      "Adjaratou"
+     ],
+     [
+      "Né(e) le",
+      "19/11/1950"
+     ],
+     [
+      "NIN",
+      "99000000000000122"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000123": [
+   {
+    "id": "CN-2024-00123",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "04/04/1987"
+     ],
+     [
+      "NIN",
+      "99000000000000123"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000124": [
+   {
+    "id": "CN-2024-00124",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SAWADOGO"
+     ],
+     [
+      "Prénoms",
+      "Nafissatou"
+     ],
+     [
+      "Né(e) le",
+      "17/09/1963"
+     ],
+     [
+      "NIN",
+      "99000000000000124"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000125": [
+   {
+    "id": "CN-2024-00125",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "02/02/2000"
+     ],
+     [
+      "NIN",
+      "99000000000000125"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000126": [
+   {
+    "id": "CN-2024-00126",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Rosalie"
+     ],
+     [
+      "Né(e) le",
+      "15/07/1976"
+     ],
+     [
+      "NIN",
+      "99000000000000126"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000127": [
+   {
+    "id": "CN-2024-00127",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KINDA"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "28/12/1952"
+     ],
+     [
+      "NIN",
+      "99000000000000127"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000128": [
+   {
+    "id": "CN-2024-00128",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Christine"
+     ],
+     [
+      "Né(e) le",
+      "13/05/1989"
+     ],
+     [
+      "NIN",
+      "99000000000000128"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000129": [
+   {
+    "id": "CN-2024-00129",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZONGO"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "26/10/1965"
+     ],
+     [
+      "NIN",
+      "99000000000000129"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000130": [
+   {
+    "id": "CN-2024-00130",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "11/03/2002"
+     ],
+     [
+      "NIN",
+      "99000000000000130"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00130",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "2002-03-11",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Assèta"
+     ],
+     [
+      "Né(e) le",
+      "11/03/2002"
+     ],
+     [
+      "NIN",
+      "99000000000000130"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000131": [
+   {
+    "id": "CN-2024-00131",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "24/08/1978"
+     ],
+     [
+      "NIN",
+      "99000000000000131"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000132": [
+   {
+    "id": "CN-2024-00132",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "GUIRA"
+     ],
+     [
+      "Prénoms",
+      "Alimata"
+     ],
+     [
+      "Né(e) le",
+      "09/01/1954"
+     ],
+     [
+      "NIN",
+      "99000000000000132"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000133": [
+   {
+    "id": "CN-2024-00133",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KONATE"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "22/06/1991"
+     ],
+     [
+      "NIN",
+      "99000000000000133"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000134": [
+   {
+    "id": "CN-2024-00134",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BONKOUNGOU"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "07/11/1967"
+     ],
+     [
+      "NIN",
+      "99000000000000134"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000135": [
+   {
+    "id": "CN-2024-00135",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KABORE"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "20/04/2004"
+     ],
+     [
+      "NIN",
+      "99000000000000135"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000136": [
+   {
+    "id": "CN-2024-00136",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TAPSOBA"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "05/09/1980"
+     ],
+     [
+      "NIN",
+      "99000000000000136"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000137": [
+   {
+    "id": "CN-2024-00137",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KAFANDO"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "18/02/1956"
+     ],
+     [
+      "NIN",
+      "99000000000000137"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000138": [
+   {
+    "id": "CN-2024-00138",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SANOU"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "03/07/1993"
+     ],
+     [
+      "NIN",
+      "99000000000000138"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000139": [
+   {
+    "id": "CN-2024-00139",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "KIENDREBEOGO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "16/12/1969"
+     ],
+     [
+      "NIN",
+      "99000000000000139"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000141": [
+   {
+    "id": "CN-2024-00141",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ZOUNGRANA"
+     ],
+     [
+      "Prénoms",
+      "Issaka"
+     ],
+     [
+      "Né(e) le",
+      "14/10/1982"
+     ],
+     [
+      "NIN",
+      "99000000000000141"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000142": [
+   {
+    "id": "CN-2024-00142",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SIMPORE"
+     ],
+     [
+      "Prénoms",
+      "Habibou"
+     ],
+     [
+      "Né(e) le",
+      "27/03/1958"
+     ],
+     [
+      "NIN",
+      "99000000000000142"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000143": [
+   {
+    "id": "CN-2024-00143",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "OUATTARA"
+     ],
+     [
+      "Prénoms",
+      "Mahamadi"
+     ],
+     [
+      "Né(e) le",
+      "12/08/1995"
+     ],
+     [
+      "NIN",
+      "99000000000000143"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000144": [
+   {
+    "id": "CN-2024-00144",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "DABIRE"
+     ],
+     [
+      "Prénoms",
+      "Aminata"
+     ],
+     [
+      "Né(e) le",
+      "25/01/1971"
+     ],
+     [
+      "NIN",
+      "99000000000000144"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000145": [
+   {
+    "id": "CN-2024-00145",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "PODA"
+     ],
+     [
+      "Prénoms",
+      "Joseph"
+     ],
+     [
+      "Né(e) le",
+      "10/06/2008"
+     ],
+     [
+      "NIN",
+      "99000000000000145"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000146": [
+   {
+    "id": "CN-2024-00146",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NIKIEMA"
+     ],
+     [
+      "Prénoms",
+      "Fatimata"
+     ],
+     [
+      "Né(e) le",
+      "23/11/1984"
+     ],
+     [
+      "NIN",
+      "99000000000000146"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000147": [
+   {
+    "id": "CN-2024-00147",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ROUAMBA"
+     ],
+     [
+      "Prénoms",
+      "Karim"
+     ],
+     [
+      "Né(e) le",
+      "08/04/1960"
+     ],
+     [
+      "NIN",
+      "99000000000000147"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000148": [
+   {
+    "id": "CN-2024-00148",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "TRAORE"
+     ],
+     [
+      "Prénoms",
+      "Salamata"
+     ],
+     [
+      "Né(e) le",
+      "21/09/1997"
+     ],
+     [
+      "NIN",
+      "99000000000000148"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000149": [
+   {
+    "id": "CN-2024-00149",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "SOME"
+     ],
+     [
+      "Prénoms",
+      "Bernard"
+     ],
+     [
+      "Né(e) le",
+      "06/02/1973"
+     ],
+     [
+      "NIN",
+      "99000000000000149"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000150": [
+   {
+    "id": "CN-2024-00150",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "19/07/2010"
+     ],
+     [
+      "NIN",
+      "99000000000000150"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   },
+   {
+    "id": "CAN-2024-00150",
+    "type": "acte_naissance",
+    "titre": "Acte de naissance (copie au dossier de nationalité)",
+    "date": "2010-07-19",
+    "champs": [
+     [
+      "Nom",
+      "NACOULMA"
+     ],
+     [
+      "Prénoms",
+      "Pauline"
+     ],
+     [
+      "Né(e) le",
+      "19/07/2010"
+     ],
+     [
+      "NIN",
+      "99000000000000150"
+     ],
+     [
+      "Copie certifiée",
+      "05/03/2024"
+     ]
+    ]
+   }
+  ],
+  "99000000000000151": [
+   {
+    "id": "CN-2024-00151",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "ILBOUDO"
+     ],
+     [
+      "Prénoms",
+      "Hamado"
+     ],
+     [
+      "Né(e) le",
+      "04/12/1986"
+     ],
+     [
+      "NIN",
+      "99000000000000151"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ],
+  "99000000000000152": [
+   {
+    "id": "CN-2024-00152",
+    "type": "certificat_nationalite",
+    "titre": "Certificat de nationalité burkinabè",
+    "date": "2024-03-05",
+    "champs": [
+     [
+      "Nom",
+      "BAGRE"
+     ],
+     [
+      "Prénoms",
+      "Germaine"
+     ],
+     [
+      "Né(e) le",
+      "17/05/1962"
+     ],
+     [
+      "NIN",
+      "99000000000000152"
+     ],
+     [
+      "Nationalité",
+      "Burkinabè (par filiation)"
+     ]
+    ]
+   }
+  ]
+ }
+}

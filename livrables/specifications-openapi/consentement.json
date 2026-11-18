@@ -1,0 +1,330 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Consentement et minimisation",
+    "description": "Accords par dossier, préférence du citoyen, contrôle avant échange.",
+    "version": "2.0"
+  },
+  "paths": {
+    "/consentement/accords": {
+      "post": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Créer l'accord d'un dossier (agent du service)",
+        "operationId": "creer_consentement_accords_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ouverture"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/accords/{dossier}": {
+      "get": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Lire un accord (citoyen concerné ou agent du service)",
+        "description": "Une tentative d'un agent d'un autre service est refusée et journalisée : le citoyen concerné la voit.",
+        "operationId": "lire_consentement_accords__dossier__get",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/accords/{dossier}/clore": {
+      "post": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "L'agent clôture : l'accord prend fin",
+        "operationId": "clore_consentement_accords__dossier__clore_post",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    },
+    "/consentement/controle": {
+      "get": {
+        "tags": [
+          "consentement"
+        ],
+        "summary": "Vérifier qu'un échange est couvert par un accord (contrôle appliqué par la passerelle)",
+        "operationId": "verifier_echange_consentement_controle_get",
+        "parameters": [
+          {
+            "name": "dossier",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dossier"
+            }
+          },
+          {
+            "name": "iu",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iu"
+            }
+          },
+          {
+            "name": "demandeur",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Demandeur"
+            }
+          },
+          {
+            "name": "codes",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Pièces ou réponses, séparées par des virgules",
+              "default": "",
+              "title": "Codes"
+            },
+            "description": "Pièces ou réponses, séparées par des virgules"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Session": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Ouverture": {
+        "properties": {
+          "dossier": {
+            "type": "string",
+            "title": "Dossier"
+          },
+          "iu": {
+            "type": "string",
+            "title": "Iu"
+          },
+          "service": {
+            "type": "string",
+            "title": "Service"
+          },
+          "finalite": {
+            "type": "string",
+            "title": "Finalite"
+          },
+          "base_legale": {
+            "type": "string",
+            "title": "Base Legale",
+            "default": ""
+          },
+          "pieces": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Pieces"
+          },
+          "duree": {
+            "type": "integer",
+            "title": "Duree",
+            "default": 30
+          }
+        },
+        "type": "object",
+        "required": [
+          "dossier",
+          "iu",
+          "service",
+          "finalite",
+          "pieces"
+        ],
+        "title": "Ouverture"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "Session": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Jeton obtenu par /session/ouvrir (identifiant unique + code à usage unique)."
+      }
+    }
+  }
+}
