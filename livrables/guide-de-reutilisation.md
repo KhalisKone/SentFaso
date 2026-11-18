@@ -47,6 +47,8 @@ python3 -m venv .venv && .venv/bin/pip install -r backend/requirements.txt
 (cd espace-usager && npm ci && npm run build)        # interface → espace-usager/dist
 ```
 
+Pour un simple essai, une seule commande suffit : `python3 outils/demo_locale.py` (installe ce qui manque, puis lance une démonstration complète avec registres simulés et citoyens fictifs).
+
 Configuration : copier le modèle commenté `backend/.env.exemple` en `backend/.env`, le remplir, puis le rendre lisible
 par le service seul (`chmod 600 backend/.env`). Ce fichier n'est jamais publié : le dépôt l'exclut, ainsi que `backend/secrets/`.
 

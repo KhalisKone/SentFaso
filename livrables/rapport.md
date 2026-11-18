@@ -7,14 +7,21 @@ Démonstrateur en ligne : https://hack226.185-193-66-4.sslip.io/frontend/ · API
 
 ---
 
-## 1. En bref
+## 1. Contexte et résultats en bref
+
+**Contexte.** Pour un passeport, une carte d'identité (CNIB) ou un concours de la fonction publique, l'usager burkinabè rassemble
+lui-même des pièces détenues par d'autres administrations : acte de naissance à la mairie, certificat de nationalité et casier
+judiciaire au tribunal. Il se déplace, paie, attend, et des copies de ses données personnelles circulent sur papier. Le principe
+« Dites-le-nous une fois » renverse la charge : une administration ne redemande pas ce qu'une autre détient déjà ; ce sont les pièces
+qui circulent, en ne transmettant que l'utile et en traçant chaque consultation sous les yeux du citoyen. Thème de l'année :
+l'open source ; le socle est donc un bien commun, libre et réutilisable par l'administration.
 
 | | |
 |---|---|
 | **Ce que voit l'usager** | Il donne son identifiant unique (NIN) au guichet, rien d'autre. Les pièces sont récupérées auprès des registres. Il n'a rien à accepter ni à régler : dans son espace, il suit ses demandes et voit chaque consultation de ses données. |
 | **Ce que fait le socle** | Une passerelle interroge les registres qui détiennent les pièces, avec authentification mutuelle, dans le cadre strict d'un accord (personne, service, finalité, pièces, durée, et base légale quand elle est renseignée), et trace chaque échange dans un journal chaîné. |
 | **Résultat** | Trois démarches de bout en bout sans aucune pièce à fournir, vérifiées en local et en ligne ; 76 tests serveur, 18 tests unitaires de l'interface et un parcours complet dans le navigateur, tous verts. |
-| **En plus (bonus)** | Un guichet agent complet, la résilience aux pannes des registres, et un assistant (la mascotte) qui répond aux questions et fait des vérifications avec les droits de la personne connectée. |
+| **En plus (bonus)** | Un guichet agent complet, la résilience aux pannes des registres, un assistant (la mascotte) qui répond aux questions et fait des vérifications avec les droits de la personne connectée, et des applications Android, Linux et Windows. |
 
 ---
 
@@ -72,6 +79,10 @@ Démonstrateur en ligne : https://hack226.185-193-66-4.sslip.io/frontend/ · API
 
 ### 2.4 Technologies et hébergement
 
+Déploiement en une commande : `python3 outils/demo_locale.py` installe ce qui manque puis lance registres simulés, socle et comptes de test.
+
+Applications (bonus) : Android (Capacitor) et ordinateur Linux / Windows (Electron), téléchargeables depuis chaque page (« ⬇ Télécharger l'application »). Elles ouvrent le site en ligne : une mise à jour du site leur parvient sans réinstallation, et une page d'erreur s'affiche hors connexion.
+
 FastAPI (Python) pour le socle et les registres ; React + Vite pour l'interface ; Firebase Realtime Database pour l'état, les accords et le journal (les pièces ne sont jamais stockées par le socle : elles restent chez les registres). L'assistant utilise Claude Haiku (API Anthropic), appelé par le serveur seulement : la clé ne quitte jamais le serveur. Hébergement sur un VPS partagé : deux services isolés (socle, registres), écoute locale uniquement, HTTPS par Caddy, plafonds mémoire (512 Mo et 256 Mo).
 
 ### 2.5 L'assistant (bonus)
@@ -93,6 +104,22 @@ La mascotte du socle, un cheval blanc au foulard aux couleurs du drapeau (comme 
 | Super admin | services et branchements ; test des registres (appel signé avec l'identifiant de test, qui ne correspond à personne) |
 
 ---
+
+### 2.6 Choix et raisons
+
+| Choix | Raison |
+|---|---|
+| Une passerelle commune, les pièces restent chez les registres | se brancher = une adresse et un code ; un seul point de contrôle et de journal ; le socle ne stocke aucune pièce |
+| Contrat des registres publié en OpenAPI, et adaptateur sans code | le jury n'ayant pas publié de contrat commun, nous publions le nôtre (dossier des spécifications OpenAPI) ; un registre qui suit un autre contrat (celui du jury ou d'une autre équipe) se branche par l'adaptateur, sans toucher à son code, puis passe le banc de conformité |
+| Réponses oui/non, calculées par le socle si besoin | minimisation : « majeur : oui » sans la date ; la donnée source est lue, utilisée puis oubliée |
+| Chaque registre décide qui peut lui demander quoi | le détenteur garde la maîtrise (ex. casier complet réservé aux passeports et à la Fonction publique) |
+| Signatures HMAC-SHA256 dans les deux sens | authentification mutuelle simple à mettre en œuvre par toute administration ; évolution vers des certificats (section 8) |
+| Accord par dossier, créé à l'ouverture et clôturé par l'agent | le citoyen n'a rien à faire ; la consultation reste bornée (personne, service, finalité, pièces, durée) |
+| Journal tenu par le serveur, chaîné et scellé, visible du citoyen | traçabilité vérifiable : aucune ligne ne peut être modifiée ou retirée sans que cela se voie |
+| Connexion par code unique + code SMS | pas de mot de passe ; adapté à l'usage du téléphone mobile |
+| Base de données et assistant au choix (Firebase, SQLite, PostgreSQL ; Claude ou modèle libre) | réutilisable par toute administration, hébergeable au Burkina |
+| Licence EUPL 1.2 | licence libre conçue pour les administrations publiques |
+| Applications qui ouvrent le site en ligne | une seule base de code ; une mise à jour du site suffit |
 
 ## 3. Démarches couvertes
 
@@ -188,5 +215,5 @@ UXP (Cybernetica) est une infrastructure d'échange décentralisée entre organi
 | Rapport | ce document (`livrables/rapport.pdf`) |
 | Vidéo de démonstration « Testez vous-même » (2 min 16) | `livrables/video-demonstration.mp4` |
 | Guide de test | `livrables/guide-de-test.pdf` |
-| Bonus : guichet agent, résilience, assistant | `espace-usager/` (guichet), section 2.3 (pannes), `assistant/` et section 2.5 |
+| Bonus : guichet agent, résilience, assistant, applications | `espace-usager/` (guichet), section 2.3 (pannes), `assistant/` et section 2.5 ; `app/` (Android, Linux, Windows), page « Télécharger » du site |
 | Bien commun : licence libre, règles, guide de réutilisation | `LICENCE.md` et `LICENSE` (EUPL 1.2) ; `livrables/regles-du-socle.pdf` ; `livrables/guide-de-reutilisation.pdf` |

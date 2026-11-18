@@ -7,6 +7,8 @@ branché en double API. Population fictive : `registres/donnees/personnes.json` 
 
 **Données de test** : en démonstration, le bouton **« 🧪 Données de test »**, sous chaque champ « identifiant unique » (connexion, nouveau dossier, nomination, test d'un calcul), propose les comptes et les personnes de test adaptés à la page ; un clic remplit le champ.
 
+**Applications** : le bouton **« ⬇ Télécharger l'application »**, en haut de chaque page, mène à https://hack226.185-193-66-4.sslip.io/frontend/telecharger : Android (APK, 4,8 Mo), Linux (AppImage, 103 Mo), Windows 10/11 (portable, 71 Mo). Elles ouvrent le site en ligne : chaque mise à jour du site leur parvient sans rien réinstaller.
+
 **Connexion (tout le monde)** : saisir le NIN → « Recevoir mon code » → saisir le code à 6 chiffres. En démonstration,
 aucun SMS n'est envoyé : le code s'affiche à l'écran. Il est valable 5 minutes, pour 3 essais.
 

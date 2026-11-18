@@ -18,10 +18,10 @@ Licence libre **EUPL 1.2**.
 Prérequis : **Python 3.12** et **Node.js 18+**.
 
 ```bash
-python3 -m venv .venv && .venv/bin/pip install -r backend/requirements.txt
-(cd espace-usager && npm ci && npm run build)
 python3 outils/demo_locale.py
 ```
+
+Une seule commande : au premier lancement, elle installe ce qui manque (environnement Python, interface), puis démarre tout.
 
 Ouvrir l'adresse affichée (http://127.0.0.1:8193/frontend/). La démonstration lance des **registres simulés** (état civil,
 casier judiciaire, nationalité, identité) peuplés de citoyens fictifs, les branche au socle, et crée les comptes ci-dessous.

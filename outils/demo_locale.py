@@ -1,10 +1,14 @@
-"""Démonstration locale, prête à l'emploi : registres simulés + socle (en mémoire) + comptes de démonstration, tout branché.
+"""Démonstration locale en une commande : installe ce qui manque, puis lance registres simulés + socle (en mémoire) +
+comptes de démonstration, tout branché.
 
 Lancer depuis la racine du projet :  python3 outils/demo_locale.py      (Ctrl+C pour arrêter)
-Prérequis : .venv avec backend/requirements.txt, et l'interface construite (cd espace-usager && npm ci && npm run build).
-Rien n'est écrit sur le disque : à chaque lancement, on repart des mêmes données fictives.
+Prérequis : Python 3.12 et Node.js 18+. Au premier lancement, la commande crée .venv (backend/requirements.txt) et construit
+l'interface (espace-usager/dist) ; les lancements suivants démarrent directement.
+Rien n'est écrit dans les données : à chaque lancement, on repart des mêmes données fictives.
 """
+import shutil
 import signal
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -12,10 +16,32 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RACINE / "espace-usager" / "tests" / "e2e"))
 
-if not (RACINE / "espace-usager" / "dist" / "index.html").exists():
-    sys.exit("Construisez d'abord l'interface :  cd espace-usager && npm ci && npm run build")
-if not (RACINE / ".venv" / "bin" / "python").exists():
-    sys.exit("Créez d'abord l'environnement Python :  python3 -m venv .venv && .venv/bin/pip install -r backend/requirements.txt")
+
+def etape(message, commande, dossier=RACINE):
+    """Lance une étape d'installation ; s'arrête avec un message clair si elle échoue."""
+    print(f"→ {message}…", flush=True)
+    if subprocess.run(commande, cwd=dossier).returncode:
+        sys.exit(f"Échec : {message}. Commande : {' '.join(map(str, commande))}")
+
+
+def installer():
+    """Première fois seulement : environnement Python et interface construite."""
+    venv = RACINE / ".venv"
+    if not (venv / "bin" / "python").exists():
+        etape("Création de l'environnement Python (.venv)", [sys.executable, "-m", "venv", str(venv)])
+        etape("Installation des dépendances Python", [str(venv / "bin" / "python"), "-m", "pip", "install", "-q",
+                                                      "-r", str(RACINE / "backend" / "requirements.txt")])
+    interface = RACINE / "espace-usager"
+    if not (interface / "dist" / "index.html").exists():
+        npm = shutil.which("npm")
+        if not npm:
+            sys.exit("Node.js 18+ (avec npm) est nécessaire pour construire l'interface : https://nodejs.org")
+        if not (interface / "node_modules").is_dir():
+            etape("Installation des dépendances de l'interface", [npm, "ci", "--no-audit", "--no-fund"], interface)
+        etape("Construction de l'interface", [npm, "run", "build", "--silent"], interface)
+
+
+installer()
 
 import parcours as p  # noqa: E402  (même installation que le test de bout en bout)
 
