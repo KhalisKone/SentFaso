@@ -105,7 +105,7 @@ Garder les signatures facultatives : un registre extérieur ne signe pas forcém
 
 ## 5. Citoyen
 
-Se connecter : voir ses demandes (rien à accepter ni à régler), choisir une pièce si deux registres l'ont,
+Se connecter : l'espace est en lecture seule. Voir ses demandes et leurs pièces (rien à accepter, régler ni déposer),
 puis voir dans « Qui a consulté mes données » chaque échange de la passerelle et chaque consultation de l'agent.
 
 ## 6. Assistant (la mascotte)

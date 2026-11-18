@@ -21,7 +21,7 @@ Licence : EUPL 1.2.
 | Super admin | créer, modifier, désactiver, supprimer les services ; remettre leurs codes ; nommer les admins ; suivre la santé des registres et le journal global | voir un dossier |
 | Admin de service | créer et modifier les démarches de son service ; nommer, suspendre ses agents | voir un dossier |
 | Agent | vérifier l'identité de la personne présente ; ouvrir, consulter (lecture seule) et clôturer les dossiers de son service | ouvrir un dossier qui le concerne ; voir ceux des autres services |
-| Citoyen | suivre ses demandes ; choisir une pièce détenue par deux administrations ; déposer une pièce introuvable ; voir qui a consulté ses données | voir les dossiers des autres |
+| Citoyen | en lecture seule : suivre ses demandes ; voir qui a consulté ses données | voir les dossiers des autres |
 | Administration détentrice (registre) | décider quels services peuvent lui demander chaque pièce ou réponse | — |
 
 ## 3. Règles de consentement : l'accord du dossier
@@ -96,7 +96,6 @@ jamais par l'écran.
 | Session | 8 heures | le serveur |
 | Lien de consultation d'une pièce | 5 minutes (15 minutes pour un lien joint à une liste) | l'administration qui détient la pièce |
 | Accord d'un dossier | durée de la démarche (30 jours par défaut) | la passerelle |
-| Pièce déposée par le citoyen | 12 mois annoncés au citoyen | démonstrateur : gardée dans le navigateur |
 | Journal | sans limite (preuve) | à fixer par l'administration, selon la loi |
 | Conversations de l'assistant | jusqu'à leur suppression par la personne | à fixer par l'administration |
 

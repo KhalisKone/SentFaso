@@ -293,12 +293,12 @@ function Provenance({ etat, x }) {
     case "sans_source":
       return <small>{x.refus ? `Refusée par ${noms(x.refus)} : votre service n'y est pas autorisé.` : "Aucun registre branché ne fournit cette réponse."}</small>;
     case "a_choisir":
-      return <small>{(x.candidats || []).length} pièces trouvées : le citoyen choisit.</small>;
+      return <small>{(x.candidats || []).length} pièces trouvées : à préciser avec le citoyen.</small>;
     case "a_fournir":
       return (
         <small>
           {x.refus ? `Refusée par ${noms(x.refus)} (votre service n'y est pas autorisé)` : (x.registres || []).length ? "Aucun registre ne la détient" : "Aucun registre ne la propose"} : le
-          citoyen la charge.
+          citoyen la présente au guichet.
         </small>
       );
     case "en_attente":

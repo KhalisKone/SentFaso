@@ -133,7 +133,7 @@ Trois démarches de bout en bout, **sans aucune pièce à fournir par l'usager**
 
 En ligne, ces trois démarches, leurs admins et leurs agents sont créés ; elles ont été vérifiées de bout en bout sur le site le 18/11/2026, avec nos registres simulés. Ceux-ci ont ensuite été **retirés** : les pièces viennent désormais des services réels d'une autre équipe (ministère de la Transition digitale, mairie, tribunal), sans rien changer au socle. Le 18/11/2026, les trois démarches ont de nouveau été vérifiées de bout en bout en ligne avec ces services réels : toutes les pièces obtenues, réponses oui/non comprises, aucune à fournir.
 
-Les cas particuliers sont démontrables : pièce détenue par deux registres (le citoyen choisit), pièce introuvable (le citoyen la charge depuis chez lui), registre en panne (« indisponible », relance automatique), service non autorisé par un registre (refus, journalisé).
+Les cas particuliers sont démontrables : pièce détenue par deux registres ou introuvable (signalée à l'agent, à préciser ou à présenter au guichet ; le citoyen n'a rien à faire dans son espace), registre en panne (« indisponible », relance automatique), service non autorisé par un registre (refus, journalisé).
 
 ---
 
@@ -176,7 +176,7 @@ Repères : la loi burkinabè sur la protection des données à caractère person
 | **Sécurité** | Connexion par code à usage unique (haché, 5 min, 3 essais) ; jetons signés ; contrôle d'accès par rôle côté serveur ; **séparation administrer / consulter** (admins et super admins ne voient aucun dossier) ; conflit d'intérêts interdit ; authentification mutuelle passerelle ↔ registres ; liens de fichiers signés de 5 minutes ; lecture seule avec filigrane. | tests socle, passerelle |
 | **Maîtrise par les détenteurs** | Chaque registre décide quels services peuvent lui demander quoi ; la passerelle respecte ces règles et n'envoie même pas le NIN à un registre qui refuserait. | tests passerelle, registres |
 | **Assistant** | Compétences en lecture seule, exécutées avec les droits de la personne connectée ; vérification d'identité réservée aux agents et journalisée ; aucune action à la place de la personne ; sans connexion, aucune donnée consultée. | tests assistant |
-| **Durée limitée** | Accord daté et expirant ; clôture qui efface les liens ; pièces déposées conservées 12 mois (paramètre de la maquette). | tests consentement |
+| **Durée limitée** | Accord daté et expirant ; clôture qui efface les liens. | tests consentement |
 
 ---
 
@@ -200,7 +200,6 @@ UXP (Cybernetica) est une infrastructure d'échange décentralisée entre organi
 | NIN commun à tous les registres (risque de recoupement) | identifiants dérivés par service, rapprochés par le seul socle |
 | Démonstration en ligne encore sur Firebase (hors du Burkina) | bascule sur PostgreSQL / Supabase : module prêt et testé, script de transfert ; base en cours de création |
 | État du socle échangé en un bloc, filtré et fusionné par le serveur | API par ressource (dossiers, rôles, démarches) |
-| Pièces déposées par l'usager gardées en mémoire du navigateur | stockage chiffré par service, liens signés |
 | Assistant : les résultats des compétences (noms, états des dossiers) sont envoyés à l'API Claude, hors du Burkina | modèle libre hébergé sur place (déjà branchable : « compatible OpenAI »), ou pseudonymisation avant envoi ; assistant désactivable par configuration |
 | Historique de l'assistant conservé jusqu'à sa suppression par la personne | durée de conservation fixée et purge automatique |
 

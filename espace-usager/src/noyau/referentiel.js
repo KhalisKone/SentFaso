@@ -46,7 +46,7 @@ export const STATUT_DOSSIER = {
 export const STATUT_PIECE = {
   en_attente: ["att", "En attente de l'accord"],
   recherche: ["info", "Recherche en cours"],
-  a_choisir: ["att", "À choisir par le citoyen"],
+  a_choisir: ["att", "Plusieurs pièces trouvées"],
   indisponible: ["ko", "Indisponible (registre en panne)"],
   sans_source: ["ko", "Aucun registre ne la fournit"],
   a_fournir: ["att", "À fournir"],

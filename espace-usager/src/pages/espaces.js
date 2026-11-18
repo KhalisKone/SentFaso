@@ -3,13 +3,11 @@ import { Admins, JournalGlobal, Services, SuperAdmins } from "./super-admin/Supe
 import { SanteRegistres } from "./super-admin/SanteRegistres.jsx";
 import { Agents, Demarches, JournalService } from "./admin/Admin.jsx";
 import { Dossiers, NouveauDossier } from "./agent/Agent.jsx";
-import { Demandes, Depots, Documents, Journal, compteurs } from "./citoyen/Citoyen.jsx";
+import { Demandes, Journal } from "./citoyen/Citoyen.jsx";
 
 export const ESPACES = {
   citoyen: [
-    { id: "demandes", libelle: "Mes demandes", Page: Demandes, compteur: compteurs.demandes },
-    { id: "depots", libelle: "Pièces à fournir", Page: Depots, compteur: compteurs.depots },
-    { id: "documents", libelle: "Mes documents", Page: Documents },
+    { id: "demandes", libelle: "Mes demandes", Page: Demandes },
     { id: "journal", libelle: "Qui a consulté mes données", Page: Journal },
   ],
   agent: [

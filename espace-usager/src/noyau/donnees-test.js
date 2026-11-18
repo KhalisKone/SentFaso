@@ -20,8 +20,8 @@ export const PROFILS_TEST = {
     ["99000000000000001", "Aminata KABORE — toutes les pièces arrivent"],
     ["99000000000000002", "Issouf OUEDRAOGO — mineur : « majeur : non »"],
     ["99000000000000017", "Aïssata DIALLO — « casier vierge : non »"],
-    ["99000000000000010", "Rasmané ILBOUDO — acte chez deux registres : à choisir *"],
-    ["99000000000000025", "Rasmata OUEDRAOGO — aucun acte de naissance : à fournir *"],
+    ["99000000000000010", "Rasmané ILBOUDO — acte chez deux registres : à préciser au guichet *"],
+    ["99000000000000025", "Rasmata OUEDRAOGO — aucun acte de naissance : à présenter au guichet *"],
   ],
   nomination: [
     ["99000000000000008", "Awa OUATTARA (sans rôle)"],

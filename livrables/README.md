@@ -6,7 +6,7 @@
 | Trois démarches de bout en bout, sans pièce à fournir par l'usager | passeport, CNIB, concours — prouvées par `../espace-usager/tests/e2e/parcours.py` (rapport, section 3) | ✅ |
 | Rapport : architecture, démarches, tests d'interopérabilité, protection des données | `rapport.pdf` (source : `rapport.md`) | ✅ |
 | Vidéo de démonstration (≈ 3 min) : une démarche complète sans pièce, puis l'usager qui retrouve la consultation | `video-demonstration.mp4` (2 min 16, voix off : « Testez vous-même », 5 essais) | ✅ |
-| Bonus : guichet agent, résilience, assistant, applications | guichet dans `../espace-usager/` ; pannes : « indisponible », relance, file hors ligne ; assistant (mascotte, Claude Haiku) dans `../assistant/` ; applications Android, Linux, Windows dans `../app/` (bouton « ⬇ Télécharger l'application » sur chaque page) | ✅ |
+| Bonus : guichet agent, résilience, assistant, applications | guichet dans `../espace-usager/` ; pannes : « indisponible », relance automatique ; assistant (mascotte, Claude Haiku) dans `../assistant/` ; applications Android, Linux, Windows dans `../app/` (bouton « ⬇ Télécharger l'application » sur chaque page) | ✅ |
 | Guide pour tester en ligne | `guide-de-test.pdf` (source : `guide-de-test.md`) | ✅ |
 
 ## Spécifications OpenAPI (`specifications-openapi/`)

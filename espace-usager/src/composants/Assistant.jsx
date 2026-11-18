@@ -69,7 +69,7 @@ function suggestions(page, competences) {
     return ["Mes dossiers en attente de l'accord du citoyen", "D'où viennent les pièces de mes démarches ?", "Vérifie le NIN 99000000000000036"];
   if (page.includes("/admin") && a("agents_du_service")) return ["Quelles démarches propose mon service ?", "Liste les agents de mon service"];
   if (page.includes("/super-admin") && a("tester_les_registres")) return ["Les registres répondent-ils ?", "Le journal est-il intègre ?", "Quels services sont branchés ?"];
-  return ["Où en sont mes demandes ?", "Qui a consulté mes données ?", "Quels papiers dois-je encore fournir ?"];
+  return ["Où en sont mes demandes ?", "Qui a consulté mes données ?", "Que contient mon dossier ?"];
 }
 
 const ACCUEIL_CONNECT = {

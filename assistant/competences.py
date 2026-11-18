@@ -22,8 +22,8 @@ TYPES = {
     "majeur": "Majeur : oui/non", "casier_vierge": "Casier judiciaire vierge : oui/non",
 }
 STATUTS_PIECE = {
-    "en_attente": "en attente de l'accord du citoyen", "recherche": "recherche en cours", "a_choisir": "à choisir par le citoyen",
-    "indisponible": "indisponible (registre en panne)", "sans_source": "aucun registre ne la fournit", "a_fournir": "à fournir par le citoyen",
+    "en_attente": "en attente de l'accord du citoyen", "recherche": "recherche en cours", "a_choisir": "plusieurs pièces trouvées, à préciser au guichet",
+    "indisponible": "indisponible (registre en panne)", "sans_source": "aucun registre ne la fournit", "a_fournir": "aucun registre ne la détient, à présenter au guichet",
     "en_file": "envoi en attente (hors ligne)", "fournie": "obtenue", "repondu": "répondu", "refusee": "refusée par le citoyen",
 }
 ACCORDS = {

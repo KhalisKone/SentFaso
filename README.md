@@ -35,8 +35,8 @@ Rien n'est écrit sur le disque : chaque lancement repart des mêmes données.
 | Admin de service (passeports / ONI / Fonction publique) | 99000000000000021 / 022 / 023 |
 | Agent (passeports / ONI / Fonction publique) | 99000000000000033 / 034 / 035 |
 | Citoyen : toutes les pièces arrivent seules | 99000000000000036 |
-| Citoyen : acte détenu par deux registres (il choisit) | 99000000000000010 |
-| Citoyen : aucun acte de naissance (il le dépose) | 99000000000000025 |
+| Citoyen : acte détenu par deux registres (à préciser au guichet) | 99000000000000010 |
+| Citoyen : aucun acte de naissance (à présenter au guichet) | 99000000000000025 |
 
 **Un parcours complet** : connecté comme agent 99000000000000033 → « Nouveau dossier » → code unique 99000000000000036 →
 « Vérifier » → démarche « Demande de passeport » → « Ouvrir le dossier » : les pièces arrivent. Puis connecté comme citoyen

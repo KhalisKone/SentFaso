@@ -11,7 +11,6 @@ import copy
 
 from session import Personne, liste
 
-ETATS_MODIFIABLES_PAR_LE_CITOYEN = ("a_fournir", "en_file", "a_choisir")
 
 
 def _droits(p: Personne):
@@ -100,12 +99,7 @@ def fusionner(actuel: dict | None, recu: dict, p: Personne) -> tuple[dict, list[
                 nouveau["consent"] = courant["consent"]  # ancien format : conservé tel quel
             dossiers[k] = nouveau
         elif courant and courant.get("iu") == p.iu:
-            for t, x in (d.get("pieces") or {}).items():
-                avant = (courant.get("pieces") or {}).get(t)
-                if avant and avant.get("statut") in ETATS_MODIFIABLES_PAR_LE_CITOYEN and x != avant:
-                    courant["pieces"][t] = x
-            if d.get("statut") in ("autorise", "complet") and courant.get("statut") in ("autorise", "complet"):
-                courant["statut"] = d["statut"]
+            pass  # espace citoyen en lecture seule : ses écritures sur ses propres dossiers sont ignorées
         elif courant != d:
             refus.append(k)
     return e, refus

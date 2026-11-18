@@ -110,7 +110,7 @@ Pour chaque administration qui détient des pièces (mairie, tribunal…) :
 | Super admin | crée, modifie, désactive ou supprime les services, leur remet un code, nomme les admins, suit la santé des registres et le journal global | aucun dossier |
 | Admin de service | crée et modifie les démarches (finalité, pièces, base légale facultative), nomme les agents | aucun dossier |
 | Agent | ouvre les dossiers au guichet avec le code unique du citoyen, consulte les pièces en lecture seule | les autres services |
-| Citoyen | suit ses demandes, choisit une pièce si deux administrations l'ont, dépose une pièce introuvable, voit qui a consulté ses données | les dossiers des autres |
+| Citoyen | en lecture seule : suit ses demandes, voit qui a consulté ses données | les dossiers des autres |
 
 Ajouter un type de pièce au vocabulaire commun : `espace-usager/src/noyau/referentiel.js` (`TYPES_PIECE`) et
 `passerelle/conformite.py` (`VOCABULAIRE`), puis reconstruire l'interface.
